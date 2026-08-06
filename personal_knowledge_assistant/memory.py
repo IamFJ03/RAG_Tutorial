@@ -14,11 +14,11 @@ class LocalMemory:
         with open(self.file_path, "r") as f:
             return json.load(f)
 
-    def save_message(self, role, content):
+    def save_message(self, question, content):
         messages = self.load_memory()
 
         messages.append({
-            "role": role,
+            "question": question,
             "content": content
         })
 
