@@ -40,7 +40,7 @@ class RagRetriever:
             model_name = self.model_name
         )
 
-    def vector_embedding(self):
+    def vector_embedding(self, question):
         vector_store = Chroma.from_documents(
             documents = self.chunks,
             embedding = self.embedding_model
@@ -50,4 +50,4 @@ class RagRetriever:
             search_kwargs = {"k":2}
         )
 
-        return retriever
+        return retriever.invoke(question)
