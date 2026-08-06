@@ -3,7 +3,7 @@ from langchain_chroma import Chroma
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyMuPDFLoader, WebBaseLoader, Docx2txtLoader, UnstructuredMarkdownLoader, TextLoader
 
-class RAG_Retriever:
+class RagRetriever:
     def __init__(self, model_name = "sentence-transformers/all-MiniLM-L6-v2"):
         self.model_name = model_name
 
@@ -35,7 +35,7 @@ class RAG_Retriever:
         )
         self.chunks = text_splitter.split_documents(self.document)
     
-    def embedding(self):
+    def model_calling(self):
         self.embedding_model = HuggingFaceEmbeddings(
             model_name = self.model_name
         )
