@@ -1,43 +1,30 @@
-from langchain_chroma import Chroma
-from langchain_core.documents import Document
-from langchain_huggingface import HuggingFaceEmbeddings
-from datetime import datetime
+import os
+import json
 
-class ConversationMemory:
-    def __init__(self):
-        self.embedding = HuggingFaceEmbeddings(
-            model_name = "sentence-transformers/all-MiniLM-L6-v2"
-        )
+class LocalMemory:
+    def __init__(self, file_path = "conversation.data"):
+        self.file_path = file_path
 
-        self.vector_store = Chroma(
-            collection_name="conversation_memory",
-            embedding_function=self.embedding,
-            persist_directory="./memory_db"
-        )
+        if not os.path.exists(file_path):
+            with open(file_path, "w") as f:
+                json.dump([], f)
 
-    def save_memory(self, question: str, answer: str):
-        timestamp = datetime.now().isoformat()
+    def load_memory(self):
+        with open(self.file_path, "r") as f:
+            return json.load(f)
+    
+    def save_memory(self, question, answer, date):
+        memory_data = self.load_memory()
 
-        memory_text = (
-            f"Question: {question}\n"
-            f"Answer: {answer}"
-        )
+        memory_data.append({
+            "question": question,
+            "answer": answer,
+            "timestamp": date
+        })
 
-        documents = Document(
-            page_content=memory_text,
-            metadata = {
-                "question": question,
-                "answer": answer,
-                "timestamp": timestamp
-            }
-        )
+        with open(self.file_path, "w") as f:
+            json.dump(memory_data, f, indent=4)
 
-        self.vector_store.add_documents([documents])
-
-    def search_memory(self, query: str, k: int = 3):
-        results = self.vector_store.similarity_search(
-            query,
-            k=k
-        )
-
-        return results
+    def clear_memory(self):
+        with open(self.file_path, "w") as f:
+            json.dump([], f)
