@@ -1,32 +1,43 @@
-import os
-import json
+from langchain_chroma import Chroma
+from langchain_core.documents import Document
+from langchain_huggingface import HuggingFaceEmbeddings
+from datetime import datetime
 
+class ConversationMemory:
+    def __init__(self):
+        self.embedding = HuggingFaceEmbeddings(
+            model_name = "sentence-transformers/all-MiniLM-L6-v2"
+        )
 
-class LocalMemory:
-    def __init__(self, file_path="conversation.data"):
-        self.file_path = file_path
+        self.vector_store = Chroma(
+            collection_name="conversation_memory",
+            embedding_function=self.embedding,
+            persist_directory="./memory_db"
+        )
 
-        if not os.path.exists(file_path):
-            with open(file_path, "w") as f:
-                json.dump([], f)
+    def save_memory(self, question: str, answer: str):
+        timestamp = datetime.now().isoformat()
 
-    def load_memory(self):
-        with open(self.file_path, "r") as f:
-            return json.load(f)
+        memory_text = (
+            f"Question: {question}\n"
+            f"Answer: {answer}"
+        )
 
-    def save_message(self, question, content, time):
-        messages = self.load_memory()
+        documents = Document(
+            page_content=memory_text,
+            metadata = {
+                "question": question,
+                "answer": answer,
+                "timestamp": timestamp
+            }
+        )
 
-        messages.append({
-            "question": question,
-            "content": content,
-            "timestamp": time
-        })
+        self.vector_store.add_documents([documents])
 
-        with open(self.file_path, "w") as f:
-            json.dump(messages, f, indent=4)
+    def search_memory(self, query: str, k: int = 3):
+        results = self.vector_store.similarity_search(
+            query,
+            k=k
+        )
 
-    def clear_message(self):
-        with open(self.file_path, "w") as f:
-            json.dump([], f)
-        
+        return results
