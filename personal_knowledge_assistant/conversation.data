@@ -3,5 +3,10 @@
         "question": "What is INVOLVE an AI powered on demand local service platform?",
         "content": "Based on the provided context, INVOLVE is a reliable, efficient, and user-centric platform developed to provide fast, reliable, and intelligent emergency assistance for local service requests. \n\nIt addresses the shortcomings of traditional local service platforms while meeting the growing demand for rapid emergency assistance by integrating Artificial Intelligence (AI), cloud computing, real-time communication, geolocation services, and blockchain technology to improve response time, decision-making, transparency, and resource allocation.",
         "timestamp": "2026-08-08T11:53:40.328724"
+    },
+    {
+        "question": "What is Langchain and how it is related with langgraph",
+        "answer": "LangChain is a framework designed to connect large language models into structured workflows, enabling multi-step reasoning and automation. It is ideal for simpler, linear workflows, rapid prototyping, and extensive integrations, easily integrating with popular LLMs, external APIs, databases, and tools through its modular chain design.\n\nLangGraph is created by the LangChain team and extends LangChain's capabilities to support complex, stateful agent workflows. It is built on LangChain and is part of the same ecosystem. While LangChain excels at sequential pipelines, LangGraph handles complex, stateful workflows with loops, branches, and multiple agents. They are complementary tools, not competitors, providing a comprehensive solution for building sophisticated autonomous AI agents.",
+        "timestamp": "2026-08-09T19:40:52.027823"
     }
 ]
