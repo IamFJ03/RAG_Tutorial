@@ -15,19 +15,17 @@ class ConversationMemory:
             persist_directory="./memory_db"
         )
 
-    def save_memory(self, question: str, answer: str):
+    def save_memory(self, conversation: list):
         timestamp = datetime.now().isoformat()
 
-        memory_text = (
-            f"Question: {question}\n"
-            f"Answer: {answer}"
+        memory_text = "\n".join(
+            f"{message.typ}: {message.content}"
+            for message in conversation
         )
 
         documents = Document(
             page_content=memory_text,
             metadata = {
-                "question": question,
-                "answer": answer,
                 "timestamp": timestamp
             }
         )
