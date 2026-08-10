@@ -19,7 +19,7 @@ class ConversationMemory:
         timestamp = datetime.now().isoformat()
 
         memory_text = "\n".join(
-            f"{message.typ}: {message.content}"
+            f"{message.type}: {message.content}"
             for message in conversation
         )
 
