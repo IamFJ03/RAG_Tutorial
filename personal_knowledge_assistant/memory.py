@@ -65,7 +65,7 @@ class LocalMemory:
             "answer": answer,
             "timestamp": date
         })
-
+ 
         with open(self.file_path, "w") as f:
             json.dump(memory_data, f, indent=4)
 
