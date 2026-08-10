@@ -8,5 +8,15 @@
         "question": "What is Langchain and how it is related with langgraph",
         "answer": "LangChain is a framework designed to connect large language models into structured workflows, enabling multi-step reasoning and automation. It is ideal for simpler, linear workflows, rapid prototyping, and extensive integrations, easily integrating with popular LLMs, external APIs, databases, and tools through its modular chain design.\n\nLangGraph is created by the LangChain team and extends LangChain's capabilities to support complex, stateful agent workflows. It is built on LangChain and is part of the same ecosystem. While LangChain excels at sequential pipelines, LangGraph handles complex, stateful workflows with loops, branches, and multiple agents. They are complementary tools, not competitors, providing a comprehensive solution for building sophisticated autonomous AI agents.",
         "timestamp": "2026-08-09T19:40:52.027823"
+    },
+    {
+        "question": "What is the objective and proposed methodology of the INVOLVE AI-powered on-demand local service platform?",
+        "answer": "I don't know.",
+        "timestamp": "2026-08-10T12:05:46.666595"
+    },
+    {
+        "question": "What is the role and purpose of MCP (Model Context Protocol) in the development and operation of AI agents?",
+        "answer": "The role and purpose of the Model Context Protocol (MCP) in the development and operation of AI agents includes the following:\n\n*   **Standardized Integration:** MCP serves as a universal, open-source protocol that provides a consistent \"language\" for LLMs to connect with external tools, data sources, and systems. It acts as a \"universal remote\" for AI, eliminating the need to build custom integrations for every pairing of an AI model and an external application.\n*   **Contextual Awareness:** It allows AI agents to move beyond static training data by enabling them to retrieve current information and interact with real-world systems, such as business software, content repositories, and development environments.\n*   **Agentic Capabilities:** By standardizing how agents discover, select, and call tools, MCP facilitates the transition from simple chatbots to reliable, active applications that can perform autonomous tasks like updating CRM systems or running specialized processes.\n*   **Architectural Efficiency:** MCP utilizes a client-server architecture where MCP servers expose capabilities (tools, resources, and prompts) in a standardized way that any compliant client (such as Claude, Cursor, or ChatGPT) can consume. This allows developers to avoid reinventing integrations from scratch.\n*   **Foundation for Scalability and Governance:** MCP offers a foundation for enterprise environments, allowing developers to build models that act with context, enforce policies, and integrate safely. It is intended to make intelligent automation predictable, secure, and reusable.",
+        "timestamp": "2026-08-10T12:11:12.466166"
     }
 ]
