@@ -28,40 +28,5 @@
         "question": "Explain what RAG (Retrieval-Augmented Generation) agents are and how they function.",
         "answer": "Retrieval-Augmented Generation (RAG) is a hybrid AI framework and architecture that improves large language model (LLM) answers by connecting them to external, up-to-date data sources instead of relying solely on static training data.\n\n**How RAG functions:**\nThe process generally works in three steps:\n\n1.  **Retrieval:** When a user asks a question, the system searches an external knowledge base (typically a vector database) for relevant information. The system converts the user's query into a numeric format\u2014sometimes called an embedding or vector\u2014to enable this search.\n2.  **Augmentation:** The retrieved context is combined with the original user query.\n3.  **Generation:** The LLM generates a response using both the original query and the retrieved information.\n\nBy injecting this context into the prompt, RAG enables LLMs to provide more accurate, current, and domain-specific responses without the need for retraining the underlying model. RAG-powered agents can access documents, databases, and knowledge bases in real time, which helps reduce hallucinations and allows for better control over the information sources used by the model.",
         "timestamp": "2026-08-10T19:17:49.129917"
-    },
-    {
-        "question": "What is the comparison of the job market between AI Agents development and Full Stack Web App development?",
-        "answer": "I don't know.",
-        "timestamp": "2026-08-10T19:25:40.995582"
-    },
-    {
-        "question": "What is the comparison of the job market between AI Agents development and Full Stack Web App development?",
-        "answer": "I don't know.",
-        "timestamp": "2026-08-10T19:30:13.752723"
-    },
-    {
-        "question": "what was our previous conversation about job market?",
-        "answer": "I don't know",
-        "timestamp": "2026-08-10T19:41:21.040582"
-    },
-    {
-        "question": "What was our previous conversation about the job market?",
-        "answer": "Our previous conversation was about the comparison of the job market between AI Agents development and Full Stack Web App development search over internet.",
-        "timestamp": "2026-08-10T19:42:33.647830"
-    },
-    {
-        "question": "What is the recommended architectural flow for implementing internet search capabilities in an MCP (Model Context Protocol) AI Agent project?",
-        "answer": "I don't know",
-        "timestamp": "2026-08-10T19:43:53.209275"
-    },
-    {
-        "question": "What is the job market outlook and comparison between AI Agent Development and Full Stack Development?",
-        "answer": "I don't know.",
-        "timestamp": "2026-08-10T19:53:43.144016"
-    },
-    {
-        "question": "remember this conversation",
-        "answer": "Saved Conversation Successfully",
-        "timestamp": "2026-08-10T19:54:13.772033"
     }
 ]

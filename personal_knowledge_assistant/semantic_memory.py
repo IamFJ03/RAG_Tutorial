@@ -39,3 +39,6 @@ class ConversationMemory:
         )
 
         return results
+
+    def clear_memory(self):
+        self.vector_store.delete_collection()
