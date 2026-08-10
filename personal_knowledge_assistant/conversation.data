@@ -10,13 +10,18 @@
         "timestamp": "2026-08-09T19:40:52.027823"
     },
     {
-        "question": "What is the objective and proposed methodology of the INVOLVE AI-powered on-demand local service platform?",
-        "answer": "I don't know.",
-        "timestamp": "2026-08-10T12:05:46.666595"
-    },
-    {
         "question": "What is the role and purpose of MCP (Model Context Protocol) in the development and operation of AI agents?",
         "answer": "The role and purpose of the Model Context Protocol (MCP) in the development and operation of AI agents includes the following:\n\n*   **Standardized Integration:** MCP serves as a universal, open-source protocol that provides a consistent \"language\" for LLMs to connect with external tools, data sources, and systems. It acts as a \"universal remote\" for AI, eliminating the need to build custom integrations for every pairing of an AI model and an external application.\n*   **Contextual Awareness:** It allows AI agents to move beyond static training data by enabling them to retrieve current information and interact with real-world systems, such as business software, content repositories, and development environments.\n*   **Agentic Capabilities:** By standardizing how agents discover, select, and call tools, MCP facilitates the transition from simple chatbots to reliable, active applications that can perform autonomous tasks like updating CRM systems or running specialized processes.\n*   **Architectural Efficiency:** MCP utilizes a client-server architecture where MCP servers expose capabilities (tools, resources, and prompts) in a standardized way that any compliant client (such as Claude, Cursor, or ChatGPT) can consume. This allows developers to avoid reinventing integrations from scratch.\n*   **Foundation for Scalability and Governance:** MCP offers a foundation for enterprise environments, allowing developers to build models that act with context, enforce policies, and integrate safely. It is intended to make intelligent automation predictable, secure, and reusable.",
         "timestamp": "2026-08-10T12:11:12.466166"
+    },
+    {
+        "question": "What is a customer support agent and what are their primary responsibilities?",
+        "answer": "A customer support agent is a professional who serves as the primary point of contact between a company and its customers. They work for businesses that engage with customers, such as retail stores, banks, and insurance companies, serving them via phone, chat, email, or in person.\n\nTheir primary responsibilities include:\n*   **Answering customer inquiries:** Providing prompt and accurate responses to customer questions, complaints, or requests.\n*   **Resolving customer issues:** Identifying problems and finding effective solutions to ensure a positive customer experience, which may include escalating issues to relevant departments when necessary.\n*   **Providing information:** Offering clear and accurate information about a company\u2019s products or services.\n*   **Guiding customers:** Assisting customers through company processes, policies, and procedures.",
+        "timestamp": "2026-08-10T12:18:30.772452"
+    },
+    {
+        "question": "What are the key specifications and features of the OnePlus Nord CE6 Lite 5G?",
+        "answer": "The key specifications and features of the OnePlus Nord CE6 Lite are:\n\n*   **Release Date:** May 12, 2026\n*   **Dimensions/Weight:** 8.5mm thickness, 208g\n*   **Operating System:** Android 16\n*   **Storage:** 128GB/256GB (with microSDXC support)\n*   **Display:** 6.72\" screen with 1080x2400 pixels\n*   **Camera:** 50MP main camera (2160p video)\n*   **RAM:** 6GB/8GB\n*   **Processor:** Dimensity 7400 Apex\n*   **Battery:** 7000mAh with 45W charging\n*   **Network:** GSM / HSPA / LTE / 5G support",
+        "timestamp": "2026-08-10T13:44:24.585917"
     }
 ]
