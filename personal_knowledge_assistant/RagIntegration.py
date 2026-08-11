@@ -30,10 +30,13 @@ class RagRetriever:
 
     def text_splitting(self):
         text_splitter = RecursiveCharacterTextSplitter(
-            chunk_size = 500,
-            chunk_overlap = 200
+            chunk_size = 1000,
+            chunk_overlap = 150
         )
         self.chunks = text_splitter.split_documents(self.document)
+       
+
+        return self.chunks
     
     def model_calling(self):
         self.embedding_model = HuggingFaceEmbeddings(
@@ -46,8 +49,9 @@ class RagRetriever:
             embedding = self.embedding_model
         )
 
-        retriever = vector_store.as_retriever(
-            search_kwargs = {"k":2}
-        )
-
-        return retriever.invoke(question)
+        retriever = vector_store.max_marginal_relevance_search(
+        query=question,
+        k=5,
+        fetch_k=15
+    )
+        return retriever

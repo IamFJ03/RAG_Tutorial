@@ -28,5 +28,35 @@
         "question": "Explain what RAG (Retrieval-Augmented Generation) agents are and how they function.",
         "answer": "Retrieval-Augmented Generation (RAG) is a hybrid AI framework and architecture that improves large language model (LLM) answers by connecting them to external, up-to-date data sources instead of relying solely on static training data.\n\n**How RAG functions:**\nThe process generally works in three steps:\n\n1.  **Retrieval:** When a user asks a question, the system searches an external knowledge base (typically a vector database) for relevant information. The system converts the user's query into a numeric format\u2014sometimes called an embedding or vector\u2014to enable this search.\n2.  **Augmentation:** The retrieved context is combined with the original user query.\n3.  **Generation:** The LLM generates a response using both the original query and the retrieved information.\n\nBy injecting this context into the prompt, RAG enables LLMs to provide more accurate, current, and domain-specific responses without the need for retraining the underlying model. RAG-powered agents can access documents, databases, and knowledge bases in real time, which helps reduce hallucinations and allows for better control over the information sources used by the model.",
         "timestamp": "2026-08-10T19:17:49.129917"
+    },
+    {
+        "question": "What is IExplain Meal Recipe Finder?",
+        "answer": "The Meal Recipe Finder is a MERN-based meal recipe platform designed with a responsive UI. It features JWT-based authentication stored in HTTP cookies and serves over 20 recipes using the Edamam API.",
+        "timestamp": "2026-08-10T22:49:17.108054"
+    },
+    {
+        "question": "What is explained about problem statement, objective and proposed methodology?",
+        "answer": "Based on the provided context, only the **Problem Statement** is explained. It states that people frequently encounter emergency situations\u2014such as vehicle breakdowns, electrical faults, plumbing leaks, appliance failures, and urgent home maintenance\u2014that require immediate professional assistance, but existing local service platforms often fail to provide rapid responses because they focus on scheduled bookings.\n\nThe provided context does not contain information regarding objectives or the proposed methodology.",
+        "timestamp": "2026-08-10T22:51:33.302321"
+    },
+    {
+        "question": "What is the objective of the study?",
+        "answer": "I don't know based on the provided context. The provided text describes the process of assigning a service professional based on a suitability score, but it does not mention a study or its objectives.",
+        "timestamp": "2026-08-10T22:54:55.851970"
+    },
+    {
+        "question": "What is the objective of the study?",
+        "answer": "I don't know based on the provided context. The provided text outlines a problem statement regarding the lack of rapid responses for emergency situations on existing local service platforms, but it does not explicitly state the objectives of the study.",
+        "timestamp": "2026-08-10T22:58:52.912008"
+    },
+    {
+        "question": "What is explained about the objective of the study?",
+        "answer": "I don't know based on the provided context. The provided text outlines a \"Problem Statement\" but does not explicitly list the objectives of the study.",
+        "timestamp": "2026-08-10T23:02:25.907652"
+    },
+    {
+        "question": "What is explained about the objective of the study?",
+        "answer": "I don't know based on the provided context. The document contains a \"Problem Statement\" section, but it does not include a section detailing the objectives of the study.",
+        "timestamp": "2026-08-10T23:06:51.230267"
     }
 ]
