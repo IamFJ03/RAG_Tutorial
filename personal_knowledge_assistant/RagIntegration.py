@@ -31,7 +31,7 @@ class RagRetriever:
     def text_splitting(self):
         text_splitter = RecursiveCharacterTextSplitter(
             chunk_size = 1000,
-            chunk_overlap = 150
+            chunk_overlap = 200
         )
         self.chunks = text_splitter.split_documents(self.document)
        
