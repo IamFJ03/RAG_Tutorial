@@ -1,6 +1,7 @@
 import os
 import json
 from typing import Optional
+from langchain_core.documents import Document
 from datetime import datetime
 class LocalMemory:
     def __init__(self, file_path = "conversation.data"):
@@ -55,10 +56,31 @@ class LocalMemory:
         if limit:
             messages = messages[-limit:]
 
-        return messages
+        documents = []
+
+        for message in messages:
+            answer = message.get("answer", message.get("content", ""))
+        
+            documents.append(
+                Document(
+                    page_content=f"""
+        Question: {message["question"]}
+        Answer: {answer}
+        Timestamp: {message["timestamp"]}
+        """,
+                    metadata={
+                        "question": message["question"],
+                        "timestamp": message["timestamp"]
+                    }
+                )
+            )
+
+        return documents
     
     def save_memory(self, question, answer, date):
-        memory_data = self.load_memory()
+        with open(self.file_path, "r") as f:
+            memory_data = json.load(f)
+
 
         memory_data.append({
             "question": question,
