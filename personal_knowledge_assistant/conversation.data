@@ -75,23 +75,33 @@
         "timestamp": "2026-08-11T21:08:41.650323"
     },
     {
-        "question": "Load last 5 messages from Local memory history",
-        "answer": "I don't know based on the provided context.",
-        "timestamp": "2026-08-12T11:19:16.580298"
+        "question": "What is INVOLVE an AI powered on demand local service platform?",
+        "answer": "INVOLVE is an AI-powered on-demand local services platform designed to provide fast, reliable, and technology-driven emergency local services. It functions as a unified system that integrates several technologies\u2014including Artificial Intelligence, cloud computing, real-time communication, GPS-based tracking, and blockchain\u2014to overcome the limitations of traditional service booking applications.\n\nKey aspects of the INVOLVE platform include:\n\n*   **AI-Based Diagnosis:** It uses AI to analyze user descriptions and uploaded images to accurately identify service requirements and the severity of an emergency.\n*   **Intelligent Worker Assignment:** Rather than simply selecting the nearest worker, the system ranks and assigns verified professionals based on expertise, availability, experience, proximity, workload, customer ratings, and emergency priority.\n*   **Advanced Features:** The platform incorporates real-time GPS tracking, ETA prediction, dynamic pricing, and blockchain-secured digital payments.\n*   **Objectives:** The platform aims to reduce response time, improve worker assignment accuracy and service reliability, optimize resource allocation, and enhance transparency and user trust.",
+        "timestamp": "2026-08-13T16:01:36.225788"
     },
     {
-        "question": "Show last 5 conversations",
-        "answer": "I don't know based on the provided context.",
-        "timestamp": "2026-08-12T11:20:40.173933"
+        "question": "What are the main features of the OnePlus Nord CE6 Lite 5G?",
+        "answer": "Based on the provided context, the main features of the OnePlus Nord CE6 Lite are:\n\n*   **Display:** 6.72\" screen with 1080x2400 pixels resolution.\n*   **Processor:** Dimensity 7400 Apex.\n*   **Memory and Storage:** 6GB or 8GB of RAM, and 128GB or 256GB of internal storage with microSDXC support.\n*   **Battery and Charging:** 7000mAh battery supporting 45W wired charging, 45W PPS, 10W reverse wired charging, and bypass charging.\n*   **Main Camera:** Dual setup featuring a 50 MP wide lens and an auxiliary lens; supports 4K@30fps and 1080p video recording with gyro-EIS.\n*   **Selfie Camera:** 8 MP wide lens with 1080p video support.\n*   **Operating System:** Android 16.\n*   **Connectivity:** 5G support, Wi-Fi 802.11 a/b/g/n/ac, Bluetooth 5.4, and USB Type-C 2.0.\n*   **Sensors:** Side-mounted fingerprint sensor, accelerometer, gyro, proximity, and compass.\n*   **Sound:** Stereo speakers (no 3.5mm jack).\n*   **Build:** 8.5mm thickness, 208g weight, and available in Hyper Black and Vivid Mint colors.",
+        "timestamp": "2026-08-13T16:02:55.449175"
+    },
+    {
+        "question": "What are the specifications of the Realme X7 Max?",
+        "answer": "The specifications for the realme X7 Max 5G are as follows:\n\n**Display**\n*   **Type:** 6.43\" Super AMOLED Fullscreen\n*   **Resolution:** 2400x1080 FHD+ (20:9 ratio)\n*   **Refresh Rate:** 120Hz\n*   **Touch Sampling Rate:** 360Hz\n*   **Protection:** Dragontrail Glass\n*   **Peak Brightness:** 1000 nits\n\n**Performance**\n*   **Processor:** MediaTek Dimensity 1200\n*   **CPU:** 1x 3.0 GHz Cortex-A78, 3x 2.6 GHz Cortex-A78, 4x 2.0 GHz Cortex-A55\n*   **GPU:** ARM Mali-G77 MC9\n*   **RAM:** 6 GB, 8 GB, or 12 GB\n*   **Storage:** 128 GB or 256 GB\n\n**Camera**\n*   **Main (Triple):** 64 MP (wide), 8 MP (ultrawide, 119\u02da), 2 MP (macro)\n*   **Selfie:** 16 MP\n*   **Features:** Dual-LED dual-tone flash, HDR, panorama, gyro-EIS\n\n**Battery & Charging**\n*   **Capacity:** 4500mAh (typical)\n*   **Charging:** 50W SuperDart Charge (includes a 65W SuperDart Charger in the box)\n\n**Connectivity & Ports**\n*   **Wi-Fi:** 2.4GHz/5GHz, Wi-Fi 6 (IEEE802.11ax), Wi-Fi Direct\n*   **Bluetooth:** 5.1 (supports SBC, AAC, APTX, APTX HD, LDAC)\n*   **NFC:** Supported\n*   **Ports:** USB Type-C, 3.5 mm Earphone Port\n*   **SIM:** Dual Nano-SIM slots\n\n**Navigation**\n*   Dual Frequency GPS, GLONASS, BEIDOU, GALILEO, QZSS\n\n**Sensors & Audio**\n*   **Sensors:** Fingerprint (under display, optical), magnetic induction, light, proximity, gyro-meter, accelerometer, compass\n*   **Audio:** Stereo speakers, 24-bit/192kHz Hi-Res audio\n\n**Dimensions & Weight**\n*   **Dimensions:** 158.5 x 73.3 x 8.4 mm\n*   **Weight:** \u2248 179g\n\n**Operating System**\n*   realme UI 2.0 (based on Android 11)",
+        "timestamp": "2026-08-13T16:25:45.958942"
+    },
+    {
+        "question": "how can an individual earn 1 crore within 2 years",
+        "answer": "Based on the provided context, there is no information on how to earn or accumulate 1 crore specifically within a 2-year timeframe.\n\nThe text mentions that making 1 crore in one year is a high-risk, high-reward goal that requires sufficient capital, strong market knowledge, disciplined execution, and expert guidance. Additionally, it notes that while some goals like reaching 1 crore in 3 to 5 years are feasible with specific monthly investments, achieving such milestones in very short timeframes typically involves high-risk strategies or significant initial capital.",
+        "timestamp": "2026-08-13T16:31:39.934147"
+    },
+    {
+        "question": "What is INVOLVE an AI powered on demand local service platform, what is its problem statement, objective and proposed solution?",
+        "answer": "Based on the provided text, here is the information regarding INVOLVE:\n\n**What is INVOLVE?**\nINVOLVE is an AI-powered on-demand local services platform designed to bridge the gap in existing services by providing fast, reliable, and intelligent service delivery. It integrates Artificial Intelligence, cloud computing, real-time communication, geolocation services, and blockchain technology to create a unified platform aimed at improving response time, service quality, and operational efficiency.\n\n**Problem Statement**\nExisting local service platforms focus primarily on scheduled bookings and often fail to provide rapid responses for emergencies like vehicle breakdowns, electrical faults, plumbing leaks, appliance failures, and urgent home maintenance. These systems suffer from:\n*   Long waiting times and difficulty finding qualified professionals.\n*   Lack of transparent pricing and limited real-time tracking.\n*   Inefficient communication.\n*   Assignment of workers based only on proximity or availability, without considering expertise, workload, emergency severity, or historical performance.\n*   The absence of AI-based issue diagnosis, which leads to incorrect service allocation, repeated visits, and delayed problem resolution.\n\n**Objective**\nThe objective of INVOLVE is to address the shortcomings of existing local service platforms\u2014such as inefficient worker allocation and long waiting times\u2014by providing a scalable, intelligent, and reliable solution that meets the demand for rapid emergency assistance. It aims to ensure a guaranteed 10-minute response time for emergency requests.\n\n**Proposed Solution**\nThe platform utilizes an AI engine to analyze user-provided text, images, or voice input to identify problems and estimate their severity. Instead of simply selecting the nearest professional, the system intelligently assigns the most suitable verified worker based on:\n*   Emergency level.\n*   Worker expertise, availability, proximity, ratings, and historical performance.\n\nAdditionally, the platform enhances transparency, security, and user trust through features such as real-time GPS tracking, ETA prediction, dynamic pricing, and blockchain-secured payments.",
+        "timestamp": "2026-08-13T19:41:18.346354"
     },
     {
         "question": null,
-        "answer": "I don't know based on the provided context.",
-        "timestamp": "2026-08-12T21:25:54.064811"
-    },
-    {
-        "question": null,
-        "answer": "I don't know based on the provided context.",
-        "timestamp": "2026-08-12T21:38:03.497575"
+        "answer": "Saved Conversation Successfully",
+        "timestamp": "2026-08-13T19:42:12.360100"
     }
 ]
