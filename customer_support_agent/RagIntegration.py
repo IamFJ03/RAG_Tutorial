@@ -48,4 +48,5 @@ class RagRetriever:
             search_kwars={"k":4}
         )
 
-        return retriever
+        documents = retriever.invoke(question)
+        return documents
