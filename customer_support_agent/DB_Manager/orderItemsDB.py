@@ -4,6 +4,7 @@ class OrderItemDatabaseManager:
     def __init__(self, db_name="customer_support_database.db"):
         self.connection = sqlite3.connect(db_name)
         self.cursor = self.connection.cursor()
+        self.create_table()
 
     def create_table(self):
         self.cursor.execute("""
@@ -28,5 +29,5 @@ class OrderItemDatabaseManager:
         self.connection.commit()
     
     def fetch_order_items_by_id(self, order_id):
-        self.cursor.execute("select * from orderItems where order_id = ?", (order_id))
+        self.cursor.execute("select * from orderItems where order_id = ?", (order_id,))
         return self.cursor.fetchall()
