@@ -20,3 +20,7 @@ class OrderItemDatabaseManager:
 """)
 
         self.connection.commit()
+
+    def fetch_order_items_by_id(self, order_id):
+        self.cursor.execute("select * from orderItems where order_id = ?", (order_id))
+        return self.cursor.fetchall()

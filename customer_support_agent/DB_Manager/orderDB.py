@@ -25,3 +25,7 @@ class OrderDatabaseManager:
     def fetch_order_by_customer_id(self, customer_id):
         self.cursor.execute("select * from orders where customer_id = ?", (customer_id))
         return self.cursor.fetchall()
+
+    def fetch_order_by_id(self, order_id):
+        self.cursor.execute("select * from orders where order_id = ?", (order_id))
+        return self.cursor.fetchall()
