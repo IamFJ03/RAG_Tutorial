@@ -1,6 +1,7 @@
 import json
 import os
 from datetime import datetime
+
 class LocalMemory:
     def __init__(self, file_path="conversation.data"):
         self.file_path = file_path
@@ -19,8 +20,8 @@ class LocalMemory:
         timestamp =  datetime.now().isoformat()
 
         memory_content.append({
-            "User": User,
-            "Agent": agent,
+            "user": User,
+            "agent": agent,
             "timestamp": timestamp
         })
 
