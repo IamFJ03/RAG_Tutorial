@@ -14,14 +14,18 @@ class LocalMemory:
         with open(self.file_path, "r") as f:
             return json.load(f)
 
-    def save_memory(self, User, agent):
+    def save_memory(self, conversation):
         memory_content = self.load_memory()
 
         timestamp =  datetime.now().isoformat()
 
+        memory_text = '\n'.join(
+            f"{message.type.upper()}: {message.content}"
+            for message in conversation
+        )
+        
         memory_content.append({
-            "user": User,
-            "agent": agent,
+            "page_content": memory_text,
             "timestamp": timestamp
         })
 

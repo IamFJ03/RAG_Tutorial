@@ -31,3 +31,7 @@ class OrderItemDatabaseManager:
     def fetch_order_items_by_id(self, order_id):
         self.cursor.execute("select * from orderItems where order_id = ?", (order_id,))
         return self.cursor.fetchall()
+
+    def fetch_item_by_id(self, id):
+        self.cursor.execute("select orders.delivery_date, orderItems.item_id, orderItems.product_name, orderItems.product_category, orderItems.unit_price from orderItems Join orders on orderItems.order_id = orders.order_id WHERE orderItems.item_id = ?", (id,))
+        return self.cursor.fetchone()
