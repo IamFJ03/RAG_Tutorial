@@ -38,5 +38,13 @@
     {
         "page_content": "HUMAN: i wanto return my order ORDTHCG\nAI: Multiple items found in your order specify which one or all?\nHUMAN: Logitech Wireless Mouse of id 2\nAI: I cannot determine your eligibility for warranty support because the provided policy documentation does not specify a warranty period for computer accessories such as a wireless mouse. Please refer to the manufacturer's documentation or contact us with the manufacturer's specific warranty terms for this product to see if you are covered.",
         "timestamp": "2026-08-17T20:41:16.694176"
+    },
+    {
+        "page_content": "HUMAN: i want to return my order of id ORDTHCG\nAI: Multiple items found in your order specify which one or all?",
+        "timestamp": "2026-08-17T21:20:24.596707"
+    },
+    {
+        "page_content": "HUMAN: i want to return my order of id ORDTHCG\nAI: Multiple items found in your order specify which one or all?\nHUMAN: Dell Inspiron 15 of id 1\nAI: You are not eligible to return your Dell Inspiron 15. According to our return policy, customers can request a return within 7 days of delivery. Since your order was placed on 2026-08-19 and the current date is past that window, your request falls outside the permitted timeframe.",
+        "timestamp": "2026-08-17T21:21:06.231629"
     }
 ]
