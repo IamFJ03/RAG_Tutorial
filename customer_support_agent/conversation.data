@@ -86,5 +86,17 @@
     {
         "page_content": "HUMAN: i want to return my order of id ORDFFZ7\nAI: Multiple items found in your order specify which one or all?\nHUMAN: Cargo Pant of id 8\nAI: Order is not delivered yet if you want you can cancel it instead of return\nHUMAN: ok then cancel it\nAI: You are not eligible to cancel this item because it has already been delivered on 2026-08-25. According to our policy, orders cannot be cancelled after they have been shipped. Since you have already received the product, you may request a return instead.",
         "timestamp": "2026-08-18T18:00:59.470366"
+    },
+    {
+        "page_content": "HUMAN: i want to return my order of id ORDFFZ7\nAI: Multiple items found in your order specify which one or all?",
+        "timestamp": "2026-08-18T18:05:43.770062"
+    },
+    {
+        "page_content": "HUMAN: i want to return my item of id 8\nAI: Order is not delivered yet if you want you can cancel it instead of return",
+        "timestamp": "2026-08-18T18:10:27.792419"
+    },
+    {
+        "page_content": "HUMAN: i want to return my item of id 8\nAI: Order is not delivered yet if you want you can cancel it instead of return\nHUMAN: ok then cancel it\nAI: Yes, you are eligible to cancel order number 8. According to our policy, customers can cancel an order as long as it has not yet entered the shipping process. Since your order status is currently 'Order Placed', your request is eligible.",
+        "timestamp": "2026-08-18T18:11:09.428555"
     }
 ]
