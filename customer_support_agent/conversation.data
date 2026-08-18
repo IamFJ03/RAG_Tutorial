@@ -102,5 +102,17 @@
     {
         "page_content": "HUMAN: show my order of id ORDFFZ7\nAI: Multiple items found in your order specify which one or all?",
         "timestamp": "2026-08-18T20:28:20.039860"
+    },
+    {
+        "page_content": "HUMAN: return my order of id ORDFFZ7\nAI: Multiple items found in your order specify which one or all?",
+        "timestamp": "2026-08-18T21:21:39.021498"
+    },
+    {
+        "page_content": "HUMAN: return my order of id ORDFFZ7\nAI: Multiple items found in your order specify which one or all?\nHUMAN: Cargo Pant id 8\nAI: Order is not delivered yet if you want you can cancel it instead of return",
+        "timestamp": "2026-08-18T21:21:54.888962"
+    },
+    {
+        "page_content": "HUMAN: return my order of id ORDFFZ7\nAI: Multiple items found in your order specify which one or all?\nHUMAN: Cargo Pant id 8\nAI: Order is not delivered yet if you want you can cancel it instead of return\nHUMAN: ok so cancel it\nAI: Yes, you are eligible to cancel your order for the Cargo Pant because your order status is currently 'Order Placed' and has not yet been shipped. To proceed with the cancellation, please provide your Order ID and the reason for your cancellation request.",
+        "timestamp": "2026-08-18T21:22:22.211738"
     }
 ]

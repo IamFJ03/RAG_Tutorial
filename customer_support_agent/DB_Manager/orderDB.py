@@ -38,5 +38,27 @@ class OrderDatabaseManager:
         return self.cursor.fetchall()
 
     def fetch_order_by_id(self, order_id):
-        self.cursor.execute("select * from orders where order_id = ?", (order_id,))
+        self.cursor.execute("""
+        SELECT
+            o.order_id,
+            o.customer_id,
+            o.order_date,
+            o.delivery_date,
+            o.status,
+            o.total_amount,
+            o.payment_method,
+
+            oi.item_id,
+            oi.product_name,
+            oi.product_category,
+            oi.quantity,
+            oi.unit_price,
+            oi.product_condition
+
+        FROM orders o
+        LEFT JOIN orderItems oi
+            ON o.order_id = oi.order_id
+
+        WHERE o.order_id = ?
+    """, (order_id,))
         return self.cursor.fetchall()
