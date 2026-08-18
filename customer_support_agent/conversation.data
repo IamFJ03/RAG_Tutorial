@@ -58,5 +58,33 @@
     {
         "page_content": "HUMAN: i want to return an order of id ORDNU4D\nAI: Multiple items found in your order specify which one or all?\nHUMAN: Cargo Pant of id 5\nAI: Yes, you are eligible to request a return for your Cargo Pant. Based on our policy, your item does not fall under the list of non-returnable categories (such as personal hygiene products, innerwear, perishable items, or personalized goods). To proceed, please submit a return request through the ShopEase support system, and we will verify your request, schedule a pickup, and inspect the item before processing your refund.",
         "timestamp": "2026-08-18T12:55:31.966014"
+    },
+    {
+        "page_content": "HUMAN: i want to return my order of id ORDTHCG\nAI: Multiple items found in your order specify which one or all?",
+        "timestamp": "2026-08-18T17:42:35.102048"
+    },
+    {
+        "page_content": "HUMAN: i want to return my order of id ORDTHCG\nAI: Multiple items found in your order specify which one or all?",
+        "timestamp": "2026-08-18T17:45:17.813015"
+    },
+    {
+        "page_content": "HUMAN: i want to return my order of id ORDTHCG\nAI: Multiple items found in your order specify which one or all?\nHUMAN: Dell Inspiron 15 of id 1\nAI: Order is not delivered yet if you want you can cancel it instead of return",
+        "timestamp": "2026-08-18T17:45:27.648380"
+    },
+    {
+        "page_content": "HUMAN: i want to return my order of id ORDTHCG\nAI: Multiple items found in your order specify which one or all?\nHUMAN: Dell Inspiron 15 of id 1\nAI: Order is not delivered yet if you want you can cancel it instead of return\nHUMAN: ok i will cancel the order\nAI: Your order is not eligible for cancellation because it has already been delivered on 2026-08-19. According to our policy, orders cannot be cancelled after they have been shipped. You may request a return for the product instead.",
+        "timestamp": "2026-08-18T17:46:02.580560"
+    },
+    {
+        "page_content": "HUMAN: i want to return my order of id ORDFFZ7\nAI: Multiple items found in your order specify which one or all?",
+        "timestamp": "2026-08-18T18:00:09.233829"
+    },
+    {
+        "page_content": "HUMAN: i want to return my order of id ORDFFZ7\nAI: Multiple items found in your order specify which one or all?\nHUMAN: Cargo Pant of id 8\nAI: Order is not delivered yet if you want you can cancel it instead of return",
+        "timestamp": "2026-08-18T18:00:25.468377"
+    },
+    {
+        "page_content": "HUMAN: i want to return my order of id ORDFFZ7\nAI: Multiple items found in your order specify which one or all?\nHUMAN: Cargo Pant of id 8\nAI: Order is not delivered yet if you want you can cancel it instead of return\nHUMAN: ok then cancel it\nAI: You are not eligible to cancel this item because it has already been delivered on 2026-08-25. According to our policy, orders cannot be cancelled after they have been shipped. Since you have already received the product, you may request a return instead.",
+        "timestamp": "2026-08-18T18:00:59.470366"
     }
 ]

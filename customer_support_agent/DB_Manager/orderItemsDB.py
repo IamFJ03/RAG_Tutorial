@@ -33,5 +33,5 @@ class OrderItemDatabaseManager:
         return self.cursor.fetchall()
 
     def fetch_item_by_id(self, id):
-        self.cursor.execute("select orders.delivery_date, orderItems.item_id, orderItems.product_name, orderItems.product_category, orderItems.unit_price from orderItems Join orders on orderItems.order_id = orders.order_id WHERE orderItems.item_id = ?", (id,))
+        self.cursor.execute("select orders.delivery_date, orders.status, orderItems.item_id, orderItems.product_name, orderItems.product_category, orderItems.unit_price from orderItems Join orders on orderItems.order_id = orders.order_id WHERE orderItems.item_id = ?", (id,))
         return self.cursor.fetchone()
