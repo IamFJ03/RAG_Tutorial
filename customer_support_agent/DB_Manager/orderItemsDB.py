@@ -22,10 +22,10 @@ class OrderItemDatabaseManager:
 
         self.connection.commit()
 
-    def add_order_items(self, item_id, order_id, product_name, product_category, quantity, unit_price):
+    def add_order_items(self, order_id, product_name, product_category, quantity, unit_price):
         self.cursor.execute("""
-            Insert into orderItems(item_id, order_id, product_name, product_category, quantity, unit_price) values(?, ?, ?, ?, ?, ?)
-""", (item_id, order_id, product_name, product_category, quantity, unit_price))
+            Insert into orderItems( order_id, product_name, product_category, quantity, unit_price) values( ?, ?, ?, ?, ?)
+""", ( order_id, product_name, product_category, quantity, unit_price))
         self.connection.commit()
     
     def fetch_order_items_by_id(self, order_id):

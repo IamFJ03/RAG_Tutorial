@@ -46,5 +46,17 @@
     {
         "page_content": "HUMAN: i want to return my order of id ORDTHCG\nAI: Multiple items found in your order specify which one or all?\nHUMAN: Dell Inspiron 15 of id 1\nAI: You are not eligible to return your Dell Inspiron 15. According to our return policy, customers can request a return within 7 days of delivery. Since your order was placed on 2026-08-19 and the current date is past that window, your request falls outside the permitted timeframe.",
         "timestamp": "2026-08-17T21:21:06.231629"
+    },
+    {
+        "page_content": "HUMAN: i want to return my order of id ORDNU4D\nAI: Multiple items found in your order specify which one or all?",
+        "timestamp": "2026-08-18T12:44:19.090838"
+    },
+    {
+        "page_content": "HUMAN: i want to return an order of id ORDNU4D\nAI: Multiple items found in your order specify which one or all?",
+        "timestamp": "2026-08-18T12:55:02.473618"
+    },
+    {
+        "page_content": "HUMAN: i want to return an order of id ORDNU4D\nAI: Multiple items found in your order specify which one or all?\nHUMAN: Cargo Pant of id 5\nAI: Yes, you are eligible to request a return for your Cargo Pant. Based on our policy, your item does not fall under the list of non-returnable categories (such as personal hygiene products, innerwear, perishable items, or personalized goods). To proceed, please submit a return request through the ShopEase support system, and we will verify your request, schedule a pickup, and inspect the item before processing your refund.",
+        "timestamp": "2026-08-18T12:55:31.966014"
     }
 ]
