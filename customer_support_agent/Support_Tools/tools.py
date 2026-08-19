@@ -1,22 +1,9 @@
 from langchain_core.tools import tool
-
-@tool
-def get_order(order_id: str):
-    """
-    Tool to fetch all data of specific order using id provided
-    Args:
-        order_id: the id provided by user to fecth order data from database
-    """
-
-@tool
-def get_order_item(item_id: str):
-    """
-        Tool to fetch all data of specific item using id provided
-        Args:
-            item_id: the id provided by user to fetch specific item data from database
-        """
+import random
+import string
 @tool
 def create_ticket(
+    customer_id: str,
     order_id: str,
     ticket_type: str,
     description: str,
@@ -31,6 +18,11 @@ def create_ticket(
         description: Description of the customer's issue.
         item_id: Optional item ID related to the ticket.
     """
+    ticket_id = 'TCK'+ ''.join(
+        random.choices(string.digits, k=4)
+    )
+
+
 
 @tool
 def update_ticket(
