@@ -74,13 +74,3 @@ def cancel_order(order_id: str, item_id: int | None = None):
         order_id: The order ID to cancel.
         item_id: Optional item ID for partial cancellation.
     """
-
-@tool
-def create_return(order_id: str, item_id: int):
-    """
-    Create a return request for a specific item.
-
-    Args:
-        order_id: The order ID.
-        item_id: The item being returned.
-    """
