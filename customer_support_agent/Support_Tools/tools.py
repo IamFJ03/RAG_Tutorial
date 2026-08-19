@@ -1,6 +1,13 @@
 from langchain_core.tools import tool
 import random
 import string
+from datetime import datetime
+from DB_Manager.ticketsDB import TicketDatabaseManager
+from DB_Manager.orderItemsDB import OrderItemDatabaseManager
+
+ticket = TicketDatabaseManager()
+order_item = OrderItemDatabaseManager()
+
 @tool
 def create_ticket(
     customer_id: str,
@@ -21,6 +28,11 @@ def create_ticket(
     ticket_id = 'TCK'+ ''.join(
         random.choices(string.digits, k=4)
     )
+    created_at = datetime.now().isoformat()
+    
+
+    ticket.add_ticket(ticket_id, ticket_type, customer_id, order_id, item_id, status, description, created_at)
+
 
 
 

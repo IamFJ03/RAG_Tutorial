@@ -7,14 +7,18 @@ class TicketDatabaseManager:
 
     def create_table(self):
         self.cursor.execute("""
-            create table if not exists tickets(
-            ticket_id TEXT primary key,
+            CREATE TABLE IF NOT EXISTS tickets (
+            ticket_id TEXT PRIMARY KEY,
             type TEXT NOT NULL,
-            customer_id TEXT,
+            customer_id TEXT NOT NULL,
             order_id TEXT,
             item_id TEXT NOT NULL,
-            status TEXT NOT NULL,
+            status TEXT NOT NULL CHECK (
+                status IN ('open', 'in_progress', 'resolved', 'closed')
+            ),
             description TEXT,
-            created_at TEXT NOT NULL
-            )
-""")
+            created_at TEXT NOT NULL,
+        
+            FOREIGN KEY (customer_id) REFERENCES customers(customer_id),
+            );
+        """)
