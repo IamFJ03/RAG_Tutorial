@@ -10,8 +10,6 @@ order_item = OrderItemDatabaseManager()
 
 @tool
 def create_ticket(
-    customer_id: str,
-    order_id: str,
     ticket_type: str,
     description: str,
     item_id: int | None = None
