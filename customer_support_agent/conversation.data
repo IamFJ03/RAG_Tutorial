@@ -170,5 +170,13 @@
     {
         "page_content": "HUMAN: cancel my order of item id 7\nAI: [{'type': 'text', 'text': 'Your order for item ID 7 (Shirt) has been successfully cancelled. You will receive a confirmation email shortly, and a full refund will be processed to your original payment method. \\n\\nIf you have any further questions or need additional assistance, please feel free to reach out!', 'extras': {'signature': 'EnEKbwERTTIPCTygTFRyej5vizJRrZxZNP0du47VMhLnMuwh/32GOiyy2Jf4tZWUKK2id8F2H3N1LO1oAX63b5M9G6hxE/s7kQC1v6gkLgrHpzIDrmrK2Cj6qF5K7FyVOZj6y30sXvZPmwyC1ZIpFowNng=='}}]",
         "timestamp": "2026-08-20T20:12:29.481944"
+    },
+    {
+        "page_content": "HUMAN: cancel my order of item id 7\nAI: Your order for item ID 7 (Shirt) has been successfully cancelled. You should receive a confirmation email shortly, and any funds will be returned to your original payment method within 3-5 business days. \n\nIs there anything else I can assist you with today?",
+        "timestamp": "2026-08-20T21:47:57.514765"
+    },
+    {
+        "page_content": "HUMAN: cancel my order of item id 7\nAI: Your order for the Shirt (ID 7) has been successfully cancelled. You will receive a confirmation email shortly, and any pending charges will be reversed according to your original payment method's policy. \n\nIf you have any further questions or need additional assistance, please feel free to ask!",
+        "timestamp": "2026-08-20T21:51:19.789451"
     }
 ]
