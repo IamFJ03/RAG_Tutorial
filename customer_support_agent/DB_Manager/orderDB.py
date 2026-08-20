@@ -62,3 +62,11 @@ class OrderDatabaseManager:
         WHERE o.order_id = ?
     """, (order_id,))
         return self.cursor.fetchall()
+
+    def update_table(self, id):
+        status = "cancel"
+        self.cursor.execute("""
+            Update orders set status = ? where order_id = ?
+""", (status, id))
+
+        self.connection.commit()
