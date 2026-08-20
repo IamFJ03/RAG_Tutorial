@@ -4,9 +4,11 @@ import string
 from datetime import datetime
 from DB_Manager.ticketsDB import TicketDatabaseManager
 from DB_Manager.orderItemsDB import OrderItemDatabaseManager
+from DB_Manager.orderDB import OrderDatabaseManager
 
 ticket = TicketDatabaseManager()
 order_item = OrderItemDatabaseManager()
+order = OrderDatabaseManager()
 
 @tool
 def create_ticket(
@@ -74,3 +76,6 @@ def cancel_order(order_id: str, item_id: int | None = None):
         order_id: The order ID to cancel.
         item_id: Optional item ID for partial cancellation.
     """
+    order.update_table(order_id)
+    result = order.fetch_order_by_id(order_id)
+    return f"Your order Updated: {result}"
