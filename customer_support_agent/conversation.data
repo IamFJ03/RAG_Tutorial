@@ -150,5 +150,17 @@
     {
         "page_content": "HUMAN: cancel my order of id 6\nAI: I couldn't find an order with that order ID.\nHUMAN: cancel my order of item with id 6\nAI: You are not eligible to cancel your order because the item has already been delivered. According to our policy, cancellation is not guaranteed once an order enters the shipping process, and items that have already been shipped or delivered cannot be cancelled.",
         "timestamp": "2026-08-20T13:04:44.707873"
+    },
+    {
+        "page_content": "HUMAN: want to cancel an order of id ORDFFZ7\nAI: Multiple items found in your order specify which one or all?",
+        "timestamp": "2026-08-20T17:44:54.223004"
+    },
+    {
+        "page_content": "HUMAN: want to cancel an order of id ORDFFZ7\nAI: Multiple items found in your order specify which one or all?\nHUMAN: all\nAI: Multiple items found in your order specify which one or all?",
+        "timestamp": "2026-08-20T17:45:12.346928"
+    },
+    {
+        "page_content": "HUMAN: want to cancel an order of id ORDFFZ7\nAI: Multiple items found in your order specify which one or all?\nHUMAN: all\nAI: Multiple items found in your order specify which one or all?\nHUMAN: item of id 7\nAI: Yes, you are eligible to cancel your order ORDFFZ7. According to our policy, customers can cancel an order before it has been shipped. Since your order status is currently 'Order Placed' and has not yet entered the shipping process, you may proceed with the cancellation. Please provide the reason for your cancellation request to complete the process.",
+        "timestamp": "2026-08-20T17:46:15.934419"
     }
 ]
