@@ -17,7 +17,7 @@ def create_ticket(
     item_id: int | None = None
 ):
     """
-    Create a customer support ticket.
+    Create a customer support ticket for solving the issues customer have.
 
     Args:
         order_id: Related order ID.
