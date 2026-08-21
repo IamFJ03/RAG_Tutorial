@@ -5,7 +5,7 @@ from datetime import datetime
 from DB_Manager.ticketsDB import TicketDatabaseManager
 from DB_Manager.orderItemsDB import OrderItemDatabaseManager
 from DB_Manager.orderDB import OrderDatabaseManager
-
+from typing import Literal
 ticket = TicketDatabaseManager()
 order_item = OrderItemDatabaseManager()
 order = OrderDatabaseManager()
@@ -14,6 +14,7 @@ order = OrderDatabaseManager()
 def create_ticket(
     ticket_type: str,
     description: str,
+    status: Literal['open', 'in_progress', 'resolved', 'closed'],
     item_id: int | None = None
 ):
     """
@@ -29,9 +30,13 @@ def create_ticket(
         random.choices(string.digits, k=4)
     )
     created_at = datetime.now().isoformat()
-    
+    all_data = order_item.fetch_item_by_id(item_id)
+    result = {
+        "order_id": all_data[1],
+        "customer_id": all_data[7]
+    }
 
-    ticket.add_ticket(ticket_id, ticket_type, customer_id, order_id, item_id, status, description, created_at)
+    ticket.add_ticket(ticket_id, ticket_type, result['customer_id'], result['order_id'], item_id, status, description, created_at)
 
 
 
