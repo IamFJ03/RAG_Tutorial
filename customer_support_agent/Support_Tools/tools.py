@@ -15,7 +15,7 @@ def create_ticket(
     ticket_type: str,
     description: str,
     status: Literal['open', 'in_progress', 'resolved', 'closed'],
-    item_id: int | None = None
+    item_id: int
 ):
     """
     Create a customer support ticket for solving the issues customer have.
@@ -36,8 +36,9 @@ def create_ticket(
         "customer_id": all_data[7]
     }
 
-    ticket.add_ticket(ticket_id, ticket_type, result['customer_id'], result['order_id'], item_id, status, description, created_at)
-
+    ticket.add_table(ticket_id, ticket_type, result['customer_id'], result['order_id'], item_id, status, description, created_at)
+    response = ticket.get_ticket(ticket_id)
+    return response
 
 
 

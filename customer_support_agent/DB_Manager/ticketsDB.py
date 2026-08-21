@@ -30,3 +30,7 @@ class TicketDatabaseManager:
 """, (ticket_id, ticket_type, customer_id, order_id, item_id, status, description, created_at))
 
         self.connection.commit()
+
+    def get_ticket(self, id):
+        self.cursor.execute("select * from tickets where ticket_id = ?", (id,))
+        return self.cursor.fetchone()

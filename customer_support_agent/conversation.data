@@ -14,5 +14,9 @@
     {
         "page_content": "HUMAN: want to return my order of id ORDTHCG\nAI: Multiple items found in your order specify which one or all?\nHUMAN: Dell Inspiron 15 of id 1\nAI: To proceed with your return for the Dell Inspiron 15 (ID: 1) from order ORDTHCG, please follow these steps:\n\n1. **Prepare the item:** Ensure the laptop is in its original packaging, includes all original accessories and manuals, and is free from any physical damage.\n2. **Initiate the return:** I have logged your request. You will receive a return shipping label and further instructions via the email address associated with your account shortly.\n3. **Drop-off:** Once you receive the label, print it, attach it to the package, and drop it off at your nearest authorized courier location.\n\nOnce we receive and inspect the item at our warehouse, your refund will be processed back to your original payment method within 5-7 business days. \n\nIs there anything else I can assist you with today?",
         "timestamp": "2026-08-21T21:23:18.885976"
+    },
+    {
+        "page_content": "HUMAN: want to return item of id 1\nAI: I have confirmed that your item (Dell Inspiron 15, Order ID 1) is eligible for a return as it is within our 7-day return window.\n\nTo proceed with your return, please follow these steps:\n\n1. **Prepare the item:** Ensure the laptop is unused, in its original packaging, and includes all original accessories and manuals. Please confirm the device is free from any customer-caused physical damage.\n2. **Submit the request:** You can initiate the official return process by logging into the **ShopEase support system** and selecting \"Return Item\" for Order ID 1.\n\nOnce your request is submitted, you will receive further instructions regarding the shipping label and drop-off process. Let me know if you need any further assistance!",
+        "timestamp": "2026-08-21T22:02:40.949983"
     }
 ]
