@@ -46,5 +46,21 @@
     {
         "page_content": "HUMAN: What's your return, cancellation and warranty policy?\nAI: Our return policy allows returns within 7 days of delivery for eligible items that are unused, in original packaging, and free from customer-caused damage. Please note that personal hygiene products, innerwear, perishable food, customized items, and gift cards are non-returnable. If a product arrives damaged, please report it within 48 hours. Regarding order cancellations and warranty coverage, the provided policy information does not contain details on these specific topics.\nHUMAN: tell me about cancellation policy\nAI: To cancel an order, you can do so before it has been shipped. If the order has already entered the shipping process, cancellation is not guaranteed. Once an item has shipped, it generally cannot be cancelled, though you may be able to refuse delivery or request a return upon receipt. To submit a request, please provide your Order ID, the specific item details, and the reason for cancellation. If you are cancelling individual items, you may do so as long as those specific items have not yet shipped.",
         "timestamp": "2026-08-22T17:28:34.492701"
+    },
+    {
+        "page_content": "HUMAN: want to return my order of id 2\nAI: I couldn't find an order with that order ID.",
+        "timestamp": "2026-08-22T19:24:49.476846"
+    },
+    {
+        "page_content": "HUMAN: want to return my item of id 2\nAI: Your return request for the Logitech Wireless Mouse (ID: 2) has been successfully initiated. \n\nYour return ticket number is **TCK6264**. \n\nPlease ensure the item is unused, in its original packaging, and includes all accessories and manuals. As noted, your return must be completed by **August 29, 2026**. If you have any further questions, feel free to reach out!",
+        "timestamp": "2026-08-22T19:34:24.101948"
+    },
+    {
+        "page_content": "HUMAN: i want a warranty of item id 3\nAI: Thank you for your patience. I have successfully opened a warranty claim for your item (ID 3).\n\n**Claim Details:**\n*   **Ticket Number:** TCK1802\n*   **Order ID:** ORDTHCG\n*   **Status:** Open\n*   **Expiry Date:** 2026-08-29\n\nTo finalize this process, please reply with the **product serial number** and a **detailed description of the issue** you are experiencing. If you have any photos or videos showing the defect, please include those as well to help us expedite your request.",
+        "timestamp": "2026-08-22T19:42:08.995095"
+    },
+    {
+        "page_content": "HUMAN: what's your refund policy?\nAI: To be eligible for a refund, you must request it within 30 days of delivery. The product must be unused, in acceptable condition, returned with original packaging and accessories, and not damaged due to misuse or unauthorized modification. Please note that some products may have additional restrictions based on their category or warranty. Since I do not have your order details, I cannot determine your specific eligibility at this time. Please provide your order ID for further assistance.",
+        "timestamp": "2026-08-22T19:54:02.152712"
     }
 ]

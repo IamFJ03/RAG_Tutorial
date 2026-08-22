@@ -4,6 +4,7 @@ class TicketDatabaseManager:
     def __init__(self, db_name="customer_support_database.db"):
         self.connection = sqlite3.connect(db_name)
         self.cursor = self.connection.cursor()
+        self.cursor.execute("DROP TABLE IF EXISTS tickets")
         self.create_table()
 
     def create_table(self):
@@ -19,15 +20,15 @@ class TicketDatabaseManager:
             ),
             description TEXT,
             created_at TEXT NOT NULL,
-        
+            completion_date TEXT NOT NULL,
             FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
             );
         """)
 
-    def add_table(self, ticket_id, ticket_type, customer_id, order_id, item_id, status, description, created_at):
+    def add_table(self, ticket_id, ticket_type, customer_id, order_id, item_id, status, description, created_at, completion_date):
         self.cursor.execute("""
-            Insert into tickets(ticket_id, type, customer_id, order_id, item_id, status, description, created_at) values(?, ?, ?, ?, ?, ?, ?, ?)
-""", (ticket_id, ticket_type, customer_id, order_id, item_id, status, description, created_at))
+            Insert into tickets(ticket_id, type, customer_id, order_id, item_id, status, description, created_at, completion_date) values(?, ?, ?, ?, ?, ?, ?, ?, ?)
+""", (ticket_id, ticket_type, customer_id, order_id, item_id, status, description, created_at, completion_date))
 
         self.connection.commit()
 

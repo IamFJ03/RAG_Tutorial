@@ -1,7 +1,7 @@
 from langchain_core.tools import tool
 import random
 import string
-from datetime import datetime
+from datetime import datetime, timedelta
 from DB_Manager.ticketsDB import TicketDatabaseManager
 from DB_Manager.orderItemsDB import OrderItemDatabaseManager
 from DB_Manager.orderDB import OrderDatabaseManager
@@ -30,13 +30,14 @@ def create_ticket(
         random.choices(string.digits, k=4)
     )
     created_at = datetime.now().isoformat()
+    completion_date = (datetime.now() + timedelta(days=7)).date().isoformat()
     all_data = order_item.fetch_item_by_id(item_id)
     result = {
         "order_id": all_data[1],
         "customer_id": all_data[7]
     }
 
-    ticket.add_table(ticket_id, ticket_type, result['customer_id'], result['order_id'], item_id, status, description, created_at)
+    ticket.add_table(ticket_id, ticket_type, result['customer_id'], result['order_id'], item_id, status, description, created_at, completion_date)
     response = ticket.get_ticket(ticket_id)
     return response
 
