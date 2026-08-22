@@ -22,5 +22,29 @@
     {
         "page_content": "HUMAN: what's the status of ticket id TCK9027\nAI: I apologize, but I am currently unable to retrieve the status for ticket TCK9027. Please verify the ticket ID or let me know if you would like me to assist you with something else.",
         "timestamp": "2026-08-22T13:35:14.415303"
+    },
+    {
+        "page_content": "HUMAN: what's the status of ticket id TCK9027\nAI: The status of your ticket **TCK9027** is currently **open**. \n\nThis ticket relates to a return request for item ID 1. It was submitted on August 21, 2026, and is being processed under the reference code ORDTHCG.",
+        "timestamp": "2026-08-22T17:02:07.289540"
+    },
+    {
+        "page_content": "HUMAN: what's the return policy?\nAI: Please provide your order ID or customer ID.",
+        "timestamp": "2026-08-22T17:08:28.310038"
+    },
+    {
+        "page_content": "HUMAN: what's your return policy?\nAI: To be eligible for a return, your request must be made within 7 days of delivery. The product must be unused or lightly used (as permitted by category), in its original packaging, include all accessories and manuals, and be free from customer-caused physical damage. Please note that certain items are non-returnable, including personal hygiene products, innerwear and intimate products, perishable food items, customized or personalized products, gift cards, and products damaged due to misuse. If your product arrived damaged, please report it within 48 hours of delivery.",
+        "timestamp": "2026-08-22T17:25:01.499872"
+    },
+    {
+        "page_content": "HUMAN: what's your return policy?\nAI: To be eligible for a return, your request must be made within 7 days of delivery. The product must be unused or lightly used (as permitted by category), in its original packaging, include all accessories and manuals, and be free from customer-caused physical damage. Please note that certain items are non-returnable, including personal hygiene products, innerwear and intimate products, perishable food items, customized or personalized products, gift cards, and products damaged due to misuse. If your product arrived damaged, please report it within 48 hours of delivery.\nHUMAN: i want to return my order\nAI: I cannot determine your eligibility for a return because I do not have your order details. To check if your order is eligible, please provide your order ID, the date of delivery, and the name of the product you wish to return. According to our policy, returns must be requested within 7 days of delivery, and the item must be unused, in its original packaging, and free from customer-caused damage.",
+        "timestamp": "2026-08-22T17:25:54.028152"
+    },
+    {
+        "page_content": "HUMAN: What's your return, cancellation and warranty policy?\nAI: Our return policy allows returns within 7 days of delivery for eligible items that are unused, in original packaging, and free from customer-caused damage. Please note that personal hygiene products, innerwear, perishable food, customized items, and gift cards are non-returnable. If a product arrives damaged, please report it within 48 hours. Regarding order cancellations and warranty coverage, the provided policy information does not contain details on these specific topics.",
+        "timestamp": "2026-08-22T17:27:42.383783"
+    },
+    {
+        "page_content": "HUMAN: What's your return, cancellation and warranty policy?\nAI: Our return policy allows returns within 7 days of delivery for eligible items that are unused, in original packaging, and free from customer-caused damage. Please note that personal hygiene products, innerwear, perishable food, customized items, and gift cards are non-returnable. If a product arrives damaged, please report it within 48 hours. Regarding order cancellations and warranty coverage, the provided policy information does not contain details on these specific topics.\nHUMAN: tell me about cancellation policy\nAI: To cancel an order, you can do so before it has been shipped. If the order has already entered the shipping process, cancellation is not guaranteed. Once an item has shipped, it generally cannot be cancelled, though you may be able to refuse delivery or request a return upon receipt. To submit a request, please provide your Order ID, the specific item details, and the reason for cancellation. If you are cancelling individual items, you may do so as long as those specific items have not yet shipped.",
+        "timestamp": "2026-08-22T17:28:34.492701"
     }
 ]

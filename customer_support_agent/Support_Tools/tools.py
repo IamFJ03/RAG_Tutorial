@@ -67,6 +67,9 @@ def get_ticket(ticket_id: str):
     Args:
         ticket_id: id used to fetch ticket data to view status support estimation etc
     """
+    response = ticket.get_ticket(ticket_id)
+    return response
+
 
 @tool
 def process_refund(order_id: str):
