@@ -8,10 +8,15 @@ class RagRetriever:
         self.embedding_model = HuggingFaceEmbeddings(
             model_name="sentence-transformers/all-MiniLM-L6-v2"
         )
+        self.vector_store = Chroma(
+             collection_name= 'store',
+             embedding_function = self.embedding_model,
+             persist_directory='./Rag_Store'
+        )
 
     def file_loader(self, source):
-        if source.startswith("https") or source.startswith("http"):
-                    loader = WebBaseLoader(source)
+        if source.startswith(("http://", "https://")):
+            loader = WebBaseLoader(source)
         
         elif source.endswith(".pdf"):
             loader = PyMuPDFLoader(source)
@@ -37,15 +42,11 @@ class RagRetriever:
         )
 
         self.chunks = text_splitter.split_documents(self.document)
+        self.vector_store.add_documents(self.chunks)
 
     def vector_embedding(self, question):
-        vector_store = Chroma.from_documents(
-            documents=self.chunks,
-            embedding=self.embedding_model
-        )
-
-        retriever = vector_store.as_retriever(
-            search_kwars={"k":4}
+        retriever = self.vector_store.as_retriever(
+            search_kwars={"k": 4}
         )
 
         documents = retriever.invoke(question)
