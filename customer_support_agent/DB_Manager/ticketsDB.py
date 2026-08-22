@@ -35,3 +35,14 @@ class TicketDatabaseManager:
     def get_ticket(self, id):
         self.cursor.execute("select * from tickets where ticket_id = ?", (id,))
         return self.cursor.fetchone()
+
+    def update_table(self, ticket_id, status, priority, description, completion_date):
+        self.cursor.execute("""
+            UPDATE tickets
+            SET status = ?, priority = ?, description = ?, completion_date = ?
+            WHERE ticket_id = ?
+        """, (status, priority, description, completion_date, ticket_id))
+
+        self.connection.commit()
+
+        return self.cursor.rowcount > 0

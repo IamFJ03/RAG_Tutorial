@@ -42,7 +42,6 @@ def create_ticket(
     return response
 
 
-
 @tool
 def update_ticket(
     ticket_id: str,
@@ -52,6 +51,7 @@ def update_ticket(
 ):
     """
     Update an existing support ticket.
+    Example: - Why being so late it's already far from the completion date given
 
     Args:
         ticket_id: Ticket ID.
@@ -59,6 +59,10 @@ def update_ticket(
         priority: New priority.
         description: Updated ticket description.
     """
+    completion_date = (datetime.now() + timedelta(days=2)).date().isoformat()
+    ticket.update_table(ticket_id, status, priority, description, completion_date)
+    updated = ticket.get_ticket(ticket_id)
+    return updated
 
 @tool
 def get_ticket(ticket_id: str):
