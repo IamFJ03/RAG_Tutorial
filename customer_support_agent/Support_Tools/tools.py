@@ -63,6 +63,7 @@ def update_ticket(
 def get_ticket(ticket_id: str):
     """
     Tool to get ticket based on the id
+    Example: - what is the status of ticket TKT-1007? 
     Args:
         ticket_id: id used to fetch ticket data to view status support estimation etc
     """

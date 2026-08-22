@@ -18,5 +18,9 @@
     {
         "page_content": "HUMAN: want to return item of id 1\nAI: I have confirmed that your item (Dell Inspiron 15, Order ID 1) is eligible for a return as it is within our 7-day return window.\n\nTo proceed with your return, please follow these steps:\n\n1. **Prepare the item:** Ensure the laptop is unused, in its original packaging, and includes all original accessories and manuals. Please confirm the device is free from any customer-caused physical damage.\n2. **Submit the request:** You can initiate the official return process by logging into the **ShopEase support system** and selecting \"Return Item\" for Order ID 1.\n\nOnce your request is submitted, you will receive further instructions regarding the shipping label and drop-off process. Let me know if you need any further assistance!",
         "timestamp": "2026-08-21T22:02:40.949983"
+    },
+    {
+        "page_content": "HUMAN: what's the status of ticket id TCK9027\nAI: I apologize, but I am currently unable to retrieve the status for ticket TCK9027. Please verify the ticket ID or let me know if you would like me to assist you with something else.",
+        "timestamp": "2026-08-22T13:35:14.415303"
     }
 ]
