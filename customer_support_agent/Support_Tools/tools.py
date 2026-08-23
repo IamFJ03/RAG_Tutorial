@@ -86,6 +86,16 @@ def process_refund(item_id: str):
     """
     Initiate a refund for an eligible order.
     """
+    response = ticket.get_ticket_by_item(item_id)
+    if response and response[1] in ("Return", "Warranty"):
+        if response[5] == "resolved":
+            pass
+        else:
+            return "Your request is under process/review when completed you will get your refund"
+    else:
+        return " You have neither raised a request for return or Warranty claim for process refund if you want i can do it give me item id and tell what request you want to raise"
+
+
 
 @tool
 def cancel_order(order_id: str, item_id: int | None = None):

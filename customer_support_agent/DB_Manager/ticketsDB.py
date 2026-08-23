@@ -46,3 +46,10 @@ class TicketDatabaseManager:
         self.connection.commit()
 
         return self.cursor.rowcount > 0
+
+    def get_ticket_by_item(self, item_id):
+        self.cursor.execute(
+        "SELECT * FROM tickets WHERE item_id = ?",
+        (item_id,)
+    )
+        return self.cursor.fetchone()
