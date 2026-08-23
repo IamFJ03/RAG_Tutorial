@@ -106,6 +106,6 @@ def cancel_order(order_id: str, item_id: int | None = None):
         order_id: The order ID to cancel.
         item_id: Optional item ID for partial cancellation.
     """
-    order.update_table(order_id)
+    order.update_table(order_id, "Cancelled")
     result = order.fetch_order_by_id(order_id)
     return f"Your order Updated: {result}"

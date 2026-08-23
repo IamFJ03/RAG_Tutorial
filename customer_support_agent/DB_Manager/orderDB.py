@@ -63,7 +63,7 @@ class OrderDatabaseManager:
     """, (order_id,))
         return self.cursor.fetchall()
 
-    def update_table(self, id):
+    def update_table(self, id, status):
         status = "Cancelled"
         self.cursor.execute("""
             Update orders set status = ? where order_id = ?
