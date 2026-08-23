@@ -18,6 +18,7 @@ class TicketDatabaseManager:
             status TEXT NOT NULL CHECK (
                 status IN ('open', 'in_progress', 'resolved', 'closed')
             ),
+            refund_status TEXT,
             description TEXT,
             created_at TEXT NOT NULL,
             completion_date TEXT NOT NULL,

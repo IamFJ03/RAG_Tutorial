@@ -66,5 +66,25 @@
     {
         "page_content": "HUMAN: i want refund on my item of id 1\nAI: Thank you for reaching out. Based on our policy, you are eligible to request a refund for your Dell Inspiron 15 (ID 1).\n\nTo proceed with your request, please contact our support team directly and provide them with your order ID. Please note that our team will need to assess the product upon return to ensure it matches the original item purchased and has not been damaged or modified due to misuse. \n\nWe look forward to assisting you in resolving this matter.",
         "timestamp": "2026-08-23T20:03:29.500701"
+    },
+    {
+        "page_content": "HUMAN: want to return my item of id 1\nAI: I cannot determine your eligibility for a return because the provided policy documentation does not specify a clear return window or duration for items. Please provide additional details regarding your purchase date or the specific reason for your return request so I can assist you further.",
+        "timestamp": "2026-08-23T22:58:14.992001"
+    },
+    {
+        "page_content": "HUMAN: want a refunf on my item of id 1\nAI: To proceed with your refund request for your Dell Inspiron 15 (Item ID: 1), please contact our support team directly. \n\nWhen you reach out, ensure you have your **Order ID** and the **Item ID (1)** ready so our team can verify your eligibility and process the request according to our refund policy.",
+        "timestamp": "2026-08-23T23:04:56.604945"
+    },
+    {
+        "page_content": "HUMAN: want  a refund on my item of id 1\nAI: I cannot determine your eligibility for a refund based on the provided policy information alone. The current policy requires that I review the status of your return request. Please provide your refund ID if available, so I can check the status and eligibility for your item.",
+        "timestamp": "2026-08-23T23:08:28.070905"
+    },
+    {
+        "page_content": "HUMAN: want  a refund on my item of id 1\nAI: I cannot determine your eligibility for a refund based on the provided policy information alone. The current policy requires that I review the status of your return request. Please provide your refund ID if available, so I can check the status and eligibility for your item.\nHUMAN: want to return my item of id 1\nAI: I cannot determine your eligibility for a return because the provided policy documentation does not specify the return window or conditions for eligibility. Please provide more details or contact our support team with your order ID so we can further assist you.",
+        "timestamp": "2026-08-23T23:10:00.124489"
+    },
+    {
+        "page_content": "HUMAN: want to return my item of id 1\nAI: I cannot determine your eligibility for a return because the provided policy documentation does not specify the time frame or conditions for returning items. Please contact our support team with your order ID so we can further investigate your request.",
+        "timestamp": "2026-08-23T23:13:28.306317"
     }
 ]
