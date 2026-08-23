@@ -62,5 +62,9 @@
     {
         "page_content": "HUMAN: what's your refund policy?\nAI: To be eligible for a refund, you must request it within 30 days of delivery. The product must be unused, in acceptable condition, returned with original packaging and accessories, and not damaged due to misuse or unauthorized modification. Please note that some products may have additional restrictions based on their category or warranty. Since I do not have your order details, I cannot determine your specific eligibility at this time. Please provide your order ID for further assistance.",
         "timestamp": "2026-08-22T19:54:02.152712"
+    },
+    {
+        "page_content": "HUMAN: i want refund on my item of id 1\nAI: Thank you for reaching out. Based on our policy, you are eligible to request a refund for your Dell Inspiron 15 (ID 1).\n\nTo proceed with your request, please contact our support team directly and provide them with your order ID. Please note that our team will need to assess the product upon return to ensure it matches the original item purchased and has not been damaged or modified due to misuse. \n\nWe look forward to assisting you in resolving this matter.",
+        "timestamp": "2026-08-23T20:03:29.500701"
     }
 ]

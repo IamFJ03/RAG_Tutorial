@@ -59,6 +59,11 @@ def update_ticket(
         priority: New priority.
         description: Updated ticket description.
     """
+    result = ticket.get_ticket(ticket_id)
+    estimated_date = result[8]
+    if estimated_date > datetime.now().date().isoformat():
+        return "Please wait till your ticket completion date is passed"
+    
     completion_date = (datetime.now() + timedelta(days=2)).date().isoformat()
     ticket.update_table(ticket_id, status, priority, description, completion_date)
     updated = ticket.get_ticket(ticket_id)
@@ -77,7 +82,7 @@ def get_ticket(ticket_id: str):
 
 
 @tool
-def process_refund(order_id: str):
+def process_refund(item_id: str):
     """
     Initiate a refund for an eligible order.
     """
