@@ -59,3 +59,10 @@ class TicketDatabaseManager:
                 "SELECT * FROM tickets"
             )
         return self.cursor.fetchall()
+
+    def update_status(self, ticket_id, status):
+        self.cursor.execute(
+            """Update tickets set refund_status = ? where ticket_id = ?""",
+        (status, ticket_id))
+
+        self.connection.commit()

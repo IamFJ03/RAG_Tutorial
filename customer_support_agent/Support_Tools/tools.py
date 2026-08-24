@@ -94,11 +94,11 @@ def process_refund(item_id: str):
 
     response = ticket.get_ticket_by_item(item_id)
 
-    print("REFUND item_id:", item_id)
-    print("REFUND ticket lookup:", response)
     if response and response[1] in ("Return", "Warranty"):
         if response[5] == "resolved":
-            pass
+            ticket.update_status(response[0], "in_progress")
+            result = ticket.get_ticket_by_item(item_id)
+            return f"Your refund is in progress will be recieved within 3 working days {result}"
         else:
             return "Your request is under process/review when completed you will get your refund"
     else:

@@ -50,5 +50,13 @@
     {
         "page_content": "HUMAN: i want a refund on my item of id 1\nAI: Thank you for reaching out. Your refund request for item ID 1 is currently under review. We will notify you once the process is complete.",
         "timestamp": "2026-08-24T14:36:58.854618"
+    },
+    {
+        "page_content": "HUMAN: want to cancel order of id ORDFFZ7\nAI: Multiple items found in your order specify which one or all?",
+        "timestamp": "2026-08-24T18:16:22.937897"
+    },
+    {
+        "page_content": "HUMAN: want to cancel order of id ORDFFZ7\nAI: Multiple items found in your order specify which one or all?\nHUMAN: item of id 7\nAI: I am sorry, but I cannot cancel your order item with ID 7. According to our policy, cancellation is not guaranteed once an order has entered the shipping process, and since your item has already been shipped, it is no longer eligible for cancellation.",
+        "timestamp": "2026-08-24T18:16:47.035341"
     }
 ]
