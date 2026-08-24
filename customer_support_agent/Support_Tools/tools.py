@@ -26,6 +26,10 @@ def create_ticket(
         description: Description of the customer's issue.
         item_id: Optional item ID related to the ticket.
     """
+    check = ticket.get_ticket_by_item(item_id)
+    if check:
+        return "You already have a request regarding this item please wait till the time provided until raising next request..."
+    
     ticket_id = 'TCK'+ ''.join(
         random.choices(string.digits, k=4)
     )
@@ -85,8 +89,13 @@ def get_ticket(ticket_id: str):
 def process_refund(item_id: str):
     """
     Initiate a refund for an eligible order.
+
     """
+
     response = ticket.get_ticket_by_item(item_id)
+
+    print("REFUND item_id:", item_id)
+    print("REFUND ticket lookup:", response)
     if response and response[1] in ("Return", "Warranty"):
         if response[5] == "resolved":
             pass

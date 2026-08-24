@@ -4,7 +4,6 @@ class TicketDatabaseManager:
     def __init__(self, db_name="customer_support_database.db"):
         self.connection = sqlite3.connect(db_name)
         self.cursor = self.connection.cursor()
-        self.cursor.execute("DROP TABLE IF EXISTS tickets")
         self.create_table()
 
     def create_table(self):
@@ -54,3 +53,9 @@ class TicketDatabaseManager:
         (item_id,)
     )
         return self.cursor.fetchone()
+
+    def get_table(self):
+        self.cursor.execute(
+                "SELECT * FROM tickets"
+            )
+        return self.cursor.fetchall()

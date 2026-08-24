@@ -35,19 +35,24 @@ class RagRetriever:
                 
         self.document = loader.load()
 
-    def text_splitting(self):
+    def text_splitting(self, policy_type):
         text_splitter = RecursiveCharacterTextSplitter(
             chunk_size = 500,
             chunk_overlap = 100
         )
 
         self.chunks = text_splitter.split_documents(self.document)
+
+        for chunk in self.chunks:
+            chunk.metadata["policy"] = policy_type
+
         self.vector_store.add_documents(self.chunks)
 
-    def vector_embedding(self, question):
+    def vector_embedding(self, question, policy_type):
         retriever = self.vector_store.as_retriever(
-            search_kwars={"k": 4}
+            search_kwargs={"k": 4}
         )
 
-        documents = retriever.invoke(question)
+        documents = retriever.invoke(question, filter={"policy": policy_type})
+
         return documents
