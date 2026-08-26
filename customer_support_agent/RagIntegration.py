@@ -2,6 +2,10 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyMuPDFLoader, WebBaseLoader, Docx2txtLoader, UnstructuredMarkdownLoader, TextLoader
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
+RAG_STORE = BASE_DIR / "Rag_Store"
 
 class RagRetriever:
     def __init__(self):
@@ -11,7 +15,7 @@ class RagRetriever:
         self.vector_store = Chroma(
              collection_name= 'store',
              embedding_function = self.embedding_model,
-             persist_directory='./Rag_Store'
+             persist_directory=RAG_STORE
         )
 
     def file_loader(self, source):
