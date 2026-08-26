@@ -18,6 +18,14 @@ class RagRetriever:
              persist_directory=RAG_STORE
         )
 
+    def policy_exists(self, policy_type):
+        result = self.vector_store._collection.get(
+            where={'policy': policy_type},
+            limit=1
+        )
+
+        return len(result["ids"]) > 0
+    
     def file_loader(self, source):
         if source.startswith(("http://", "https://")):
             loader = WebBaseLoader(source)
@@ -54,9 +62,12 @@ class RagRetriever:
 
     def vector_embedding(self, question, policy_type):
         retriever = self.vector_store.as_retriever(
-            search_kwargs={"k": 4}
+            search_kwargs={
+                "k": 4,
+                "filter": {"policy": policy_type}
+                }
         )
 
-        documents = retriever.invoke(question, filter={"policy": policy_type})
+        documents = retriever.invoke(question)
 
         return documents
