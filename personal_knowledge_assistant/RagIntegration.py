@@ -19,13 +19,11 @@ class RagRetriever:
             persist_directory=store_path
         )
 
-    def data_exists(self, topic, description):
-        topic = topic.lower()
-        description = description.lower()
+    def data_exists(self, file_name):
+        file_name = file_name.lower()
         result = self.vector_store._collection.get(
             where={
-                "topic": topic,
-                "description": description
+                "source": file_name
             },
             limit=1
         )
@@ -52,26 +50,26 @@ class RagRetriever:
         
         self.document = loader.load()
 
-    def text_splitting(self, topic, description):
+    def text_splitting(self, file_name):
         text_splitter = RecursiveCharacterTextSplitter(
             chunk_size = 1000,
             chunk_overlap = 200
         )
         self.chunks = text_splitter.split_documents(self.document)
-        topic = topic.lower()
-        description =  description.lower()
+        file_name = file_name.lower()
         for chunk in self.chunks:
-            chunk.metadata['topic'] = topic
-            chunk.metadata['description'] = description
+            chunk.metadata['source'] = file_name
 
         self.vector_store.add_documents(self.chunks)
 
         return self.chunks
 
-    def vector_embedding(self, question):
+    def vector_embedding(self, question, file_name):
+        file_name = file_name.lower()
         retriever = self.vector_store.max_marginal_relevance_search(
         query=question,
         k=5,
-        fetch_k=15
+        fetch_k=15,
+        filter={"source": file_name}
     )
         return retriever
