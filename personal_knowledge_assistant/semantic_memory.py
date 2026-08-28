@@ -2,7 +2,6 @@ from langchain_chroma import Chroma
 from langchain_core.documents import Document
 from langchain_huggingface import HuggingFaceEmbeddings
 from datetime import datetime
-from pathlib import Path
 import os
 
 class ConversationMemory:
@@ -11,7 +10,6 @@ class ConversationMemory:
             model_name = "sentence-transformers/all-MiniLM-L6-v2"
         )
         store_path = os.getenv("MEMORY_STORE_PATH", "Memory_Store")
-
         
         self.vector_store = Chroma(
             collection_name="conversation_memory",

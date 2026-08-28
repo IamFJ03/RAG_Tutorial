@@ -19,6 +19,10 @@ class RagRetriever:
             persist_directory=store_path
         )
 
+    def store_exists(self):
+        exists = self.vector_store._collection.count()
+        return exists
+
     def file_loader(self, source):
         if source.startswith("https") or source.startswith("http"):
             loader = WebBaseLoader(source)
