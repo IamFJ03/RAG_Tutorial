@@ -44,13 +44,20 @@ class RagRetriever:
         
         self.document = loader.load()
 
-    def text_splitting(self):
+    def text_splitting(self, topic, description):
         text_splitter = RecursiveCharacterTextSplitter(
             chunk_size = 1000,
             chunk_overlap = 200
         )
         self.chunks = text_splitter.split_documents(self.document)
+
+        for chunk in self.chunks:
+            chunk.metadata['topic'] = topic
+            chunk.metadata['description'] = description
+
         self.vector_store.add_documents(self.chunks)
+
+
 
         return self.chunks
 
