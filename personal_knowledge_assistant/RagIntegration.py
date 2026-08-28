@@ -19,9 +19,17 @@ class RagRetriever:
             persist_directory=store_path
         )
 
-    def store_exists(self):
-        exists = self.vector_store._collection.count()
-        return exists
+    def data_exists(self, topic, description):
+        topic = topic.lower()
+        description = description.lower()
+        result = self.vector_store._collection.get(
+            where={
+                "topic": topic,
+                "description": description
+            },
+            limit=1
+        )
+        return len(result["ids"]) > 0
 
     def file_loader(self, source):
         if source.startswith("https") or source.startswith("http"):
@@ -50,14 +58,13 @@ class RagRetriever:
             chunk_overlap = 200
         )
         self.chunks = text_splitter.split_documents(self.document)
-
+        topic = topic.lower()
+        description =  description.lower()
         for chunk in self.chunks:
             chunk.metadata['topic'] = topic
             chunk.metadata['description'] = description
 
         self.vector_store.add_documents(self.chunks)
-
-
 
         return self.chunks
 
