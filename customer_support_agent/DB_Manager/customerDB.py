@@ -1,7 +1,15 @@
 import sqlite3
 from datetime import datetime
+import os
+
 class CustomerDatabaseManager:
-    def __init__(self, db_name="customer_support_database.db"):
+    def __init__(self, db_name=None):
+        if db_name is None:
+            db_name = os.getenv(
+                "DB_PATH",
+                "customer_support_database.db"
+            )
+            
         self.connection = sqlite3.connect(db_name)
         self.cursor = self.connection.cursor()
         self.create_table()
