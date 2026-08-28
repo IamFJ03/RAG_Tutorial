@@ -2,10 +2,22 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyMuPDFLoader, WebBaseLoader, Docx2txtLoader, UnstructuredMarkdownLoader, TextLoader
+from pathlib import Path
+
+
+BASE_DIR = Path(__file__).resolve().parent
+store_path = BASE_DIR / 'Knowledge_Store'
 
 class RagRetriever:
-    def __init__(self, model_name = "sentence-transformers/all-MiniLM-L6-v2"):
-        self.model_name = model_name
+    def __init__(self):
+        self.embedding_model = HuggingFaceEmbeddings(
+            model_name = "sentence-transformers/all-MiniLM-L6-v2"
+        )
+        self.vector_store = Chroma(
+            collection_name= 'store',
+            embedding_function= self.embedding_model,
+            persist_directory=store_path
+        )
 
     def file_loader(self, source):
         if source.startswith("https") or source.startswith("http"):
@@ -34,22 +46,12 @@ class RagRetriever:
             chunk_overlap = 200
         )
         self.chunks = text_splitter.split_documents(self.document)
-       
+        self.vector_store.add_documents(self.chunks)
 
         return self.chunks
-    
-    def model_calling(self):
-        self.embedding_model = HuggingFaceEmbeddings(
-            model_name = self.model_name
-        )
 
     def vector_embedding(self, question):
-        vector_store = Chroma.from_documents(
-            documents = self.chunks,
-            embedding = self.embedding_model
-        )
-
-        retriever = vector_store.max_marginal_relevance_search(
+        retriever = self.vector_store.max_marginal_relevance_search(
         query=question,
         k=5,
         fetch_k=15

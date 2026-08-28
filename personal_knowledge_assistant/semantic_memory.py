@@ -2,17 +2,21 @@ from langchain_chroma import Chroma
 from langchain_core.documents import Document
 from langchain_huggingface import HuggingFaceEmbeddings
 from datetime import datetime
+from pathlib import Path
+import os
 
 class ConversationMemory:
     def __init__(self):
         self.embedding = HuggingFaceEmbeddings(
             model_name = "sentence-transformers/all-MiniLM-L6-v2"
         )
+        store_path = os.getenv("MEMORY_STORE_PATH", "Memory_Store")
 
+        
         self.vector_store = Chroma(
             collection_name="conversation_memory",
             embedding_function=self.embedding,
-            persist_directory="./memory_db"
+            persist_directory=store_path
         )
 
     def save_memory(self, conversation: list):
