@@ -67,7 +67,7 @@ class OrderDatabaseManager:
 
         WHERE o.order_id = ?
     """, (order_id,))
-        return self.cursor.fetchall()
+        return self.cursor.fetchone()
 
     def update_table(self, id, status):
         self.cursor.execute("""

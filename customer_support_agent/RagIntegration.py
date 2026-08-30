@@ -69,5 +69,7 @@ class RagRetriever:
         )
 
         documents = retriever.invoke(question)
-
+        for doc in documents:
+            print("-----")
+            print(doc.page_content)
         return documents

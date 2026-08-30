@@ -74,5 +74,25 @@
     {
         "page_content": "HUMAN: i want a refund on my item of id 1\nAI: I cannot determine your eligibility for a refund at this time because the provided policy does not specify the exact refund window duration (e.g., number of days after delivery). To process your request, please contact our support team with your order ID so we can verify if your request satisfies the applicable return and refund conditions.\nHUMAN: i want to cancel my order of id ORDFFZ7\nAI: Multiple items found in your order specify which one or all?\nHUMAN: item of id 7\nAI: You are not eligible to cancel your order because it has already been delivered. According to our policy, orders cannot be cancelled after shipment. However, you may request a return for the product now that you have received it.",
         "timestamp": "2026-08-30T17:29:26.926448"
+    },
+    {
+        "page_content": "HUMAN: i want a refund on my item of id 1\nAI: I cannot determine your eligibility for a refund at this time because the provided policy does not specify the exact return window duration (e.g., 14 or 30 days). While your order was delivered on 2026-08-19 and today is 2026-08-30, I am unable to confirm if this falls within the allowed timeframe. Please contact our support team with your order ID 1 so we can verify if your specific product meets all applicable return and refund conditions.",
+        "timestamp": "2026-08-30T19:06:18.103868"
+    },
+    {
+        "page_content": "HUMAN: i want to cancel my order of id ORDFFZ7\nAI: Your order ORDFFZ7 is not eligible for cancellation because it has already been delivered. According to our policy, cancellation is not guaranteed once an order enters the shipping process, and items that have already been shipped cannot be cancelled.",
+        "timestamp": "2026-08-30T19:11:58.894528"
+    },
+    {
+        "page_content": "HUMAN: i want to cancel my order of id ORDFFZ7\nAI: Your order ORDFFZ7 is not eligible for cancellation because it has already been delivered. According to our policy, cancellation is not guaranteed once an order enters the shipping process, and items that have already been shipped cannot be cancelled.\nHUMAN: i want a refund on my item of id 1\nAI: Thank you for reaching out. Regarding your request for a refund on item ID 1, please be advised that your request is currently under process/review. You will be notified once the process is complete.",
+        "timestamp": "2026-08-30T19:12:32.999069"
+    },
+    {
+        "page_content": "HUMAN: i want a refund on my item of id 1\nAI: Thank you for reaching out regarding your refund request for item ID 1.\n\nYour request is currently under review. We will notify you once the process has been completed.",
+        "timestamp": "2026-08-30T19:13:39.246212"
+    },
+    {
+        "page_content": "HUMAN: i want a refund on my item of id 1\nAI: Thank you for reaching out regarding your refund request for item ID 1.\n\nYour request is currently under review. We will notify you once the process has been completed.\nHUMAN: want to return my item of id 1\nAI: Thank you for reaching out to us. \n\nRegarding your request for item ID 1, our records indicate that there is already an active request in progress. Please wait for the process to be completed within the timeframe previously provided before raising an additional request.",
+        "timestamp": "2026-08-30T19:15:10.895299"
     }
 ]
