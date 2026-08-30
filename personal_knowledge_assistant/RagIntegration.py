@@ -4,7 +4,6 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyMuPDFLoader, WebBaseLoader, Docx2txtLoader, UnstructuredMarkdownLoader, TextLoader
 from pathlib import Path
 
-
 BASE_DIR = Path(__file__).resolve().parent
 store_path = BASE_DIR / 'Knowledge_Store'
 
@@ -13,6 +12,7 @@ class RagRetriever:
         self.embedding_model = HuggingFaceEmbeddings(
             model_name = "sentence-transformers/all-MiniLM-L6-v2"
         )
+        
         self.vector_store = Chroma(
             collection_name= 'store',
             embedding_function= self.embedding_model,

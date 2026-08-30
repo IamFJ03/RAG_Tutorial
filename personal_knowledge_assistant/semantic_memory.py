@@ -9,6 +9,7 @@ class ConversationMemory:
         self.embedding = HuggingFaceEmbeddings(
             model_name = "sentence-transformers/all-MiniLM-L6-v2"
         )
+
         store_path = os.getenv("MEMORY_STORE_PATH", "Memory_Store")
         
         self.vector_store = Chroma(

@@ -12,10 +12,10 @@ class LocalMemory:
                 json.dump([], f)
 
     def load_memory(self,
-                    timestamp: Optional[str] = None,
-                    limit: Optional[str] = None,
-                    search_term: Optional[str] = None
-                    ):
+            timestamp: Optional[str] = None,
+            limit: Optional[str] = None,
+            search_term: Optional[str] = None
+            ):
         
         with open(self.file_path, "r") as f:
             messages =  json.load(f)
