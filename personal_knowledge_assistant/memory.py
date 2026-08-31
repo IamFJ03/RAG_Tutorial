@@ -81,7 +81,6 @@ class LocalMemory:
         with open(self.file_path, "r") as f:
             memory_data = json.load(f)
 
-
         memory_data.append({
             "question": question,
             "answer": answer,

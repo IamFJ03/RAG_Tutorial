@@ -103,5 +103,20 @@
         "question": null,
         "answer": "Saved Conversation Successfully",
         "timestamp": "2026-08-13T19:42:12.360100"
+    },
+    {
+        "question": "What is INVOLVE an AI powered on demand local service platform?",
+        "answer": "INVOLVE is an AI-powered on-demand local services platform designed to provide fast, reliable, and technology-driven emergency local services. It functions as a unified system that integrates several technologies\u2014including Artificial Intelligence, cloud computing, real-time communication, GPS-based tracking, and blockchain\u2014to overcome the limitations of traditional service booking applications.\n\nKey aspects of the platform include:\n\n*   **AI-Based Diagnosis:** It uses AI to analyze user descriptions and uploaded images to accurately identify service requirements and the severity of an emergency.\n*   **Intelligent Worker Assignment:** Rather than simply selecting the nearest worker, the system ranks and assigns verified professionals based on expertise, availability, experience, proximity, workload, customer ratings, and emergency priority.\n*   **Advanced Features:** The platform incorporates features such as ETA prediction, dynamic pricing, real-time GPS tracking, and secure blockchain-based digital payments.\n*   **Objectives:** The platform aims to improve response time, worker assignment accuracy, service reliability, transparency, and operational efficiency to provide a more user-centric experience for both customers and professionals.",
+        "timestamp": "2026-08-31T13:34:04.568274"
+    },
+    {
+        "question": "What is the objective of INVOLVE an AI powered on demand local service platform?",
+        "answer": "The objective of INVOLVE is to provide intelligent and efficient emergency local service management by overcoming the limitations of traditional service booking applications. Specifically, it aims to:\n\n*   **Reduce response time** and improve the accuracy of worker assignments.\n*   **Enhance service reliability** and overall customer satisfaction.\n*   **Provide greater transparency** throughout the service lifecycle.\n*   **Create a smarter, faster, and more efficient ecosystem** for on-demand local emergency services by integrating Artificial Intelligence, real-time communication, geolocation, and blockchain technology.",
+        "timestamp": "2026-08-31T13:34:54.745063"
+    },
+    {
+        "question": null,
+        "answer": "Saved Conversation Successfully",
+        "timestamp": "2026-08-31T13:35:46.298656"
     }
 ]

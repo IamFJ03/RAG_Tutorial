@@ -18,7 +18,7 @@ class ConversationMemory:
             persist_directory=store_path
         )
 
-    def save_memory(self, conversation: list):
+    def save_memory(self, conversation: list, topic: str, description: str):
         timestamp = datetime.now().isoformat()
 
         memory_text = "\n".join(
@@ -29,16 +29,22 @@ class ConversationMemory:
         documents = Document(
             page_content=memory_text,
             metadata = {
-                "timestamp": timestamp
+                "timestamp": timestamp,
+                "topic": topic,
+                "description": description
             }
         )
 
         self.vector_store.add_documents([documents])
 
-    def search_memory(self, query: str, k: int = 3):
+    def search_memory(self, query: str, topic, description, k: int = 3):
         results = self.vector_store.similarity_search(
             query,
-            k=k
+            k=k,
+            filter={
+                "topic": topic,
+                "description": description
+            }
         )
 
         return results
