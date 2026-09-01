@@ -37,14 +37,10 @@ class ConversationMemory:
 
         self.vector_store.add_documents([documents])
 
-    def search_memory(self, query: str, topic, description, k: int = 3):
+    def search_memory(self, query: str, k: int = 3):
         results = self.vector_store.similarity_search(
             query,
-            k=k,
-            filter={
-                "topic": topic,
-                "description": description
-            }
+            k=k
         )
 
         return results

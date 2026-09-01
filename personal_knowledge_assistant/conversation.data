@@ -138,5 +138,50 @@
         "question": "how is it used in ai agents??",
         "answer": "Saved Conversation Successfully",
         "timestamp": "2026-08-31T20:43:55.153224"
+    },
+    {
+        "question": "What is the concept of MCP (Model Context Protocol) in the context of AI agents?",
+        "answer": "In the context of AI agents, the Model Context Protocol (MCP) is an open standard, developed by Anthropic, that acts as a universal toolbelt or a \"USB-C port\" for AI. It provides a structured, standardized way for AI agents to discover, connect to, and interact with external resources, such as databases, APIs, file systems, and tools.\n\nKey aspects of this concept include:\n\n*   **Standardization:** It replaces the need for hardcoding connections to each individual service by providing a consistent interface. This allows AI agents to understand what tools are available, how to use them, and how to process the responses.\n*   **Interoperability:** MCP separates how AI clients (like IDEs or chat tools) talk to models from how they discover and call external tools, enabling the same integrations to be reused across different models or vendors.\n*   **Functionality:** It shifts AI agents from being passive responders to active participants, allowing them to perform tasks like running code, booking flights, or updating CRMs by securely accessing necessary data and services.\n*   **Structure:** The protocol is composed of three main parts: the MCP client (inside the agent making requests), the MCP server (wrapping the external tools), and the MCP protocol (using JSON-RPC).\n\nUltimately, MCP is a philosophy of interoperability designed to remove ambiguity and reduce dependency on ad hoc code, enabling agents to operate with better understanding and adaptivity.",
+        "timestamp": "2026-08-31T22:08:10.160674"
+    },
+    {
+        "question": "how is the Model Context Protocol (MCP) used in AI agents?",
+        "answer": "The Model Context Protocol (MCP) is used in AI agents to connect them to external tools and data sources, allowing them to operate beyond the limitations of their original training data.\n\nSpecifically, it is used in the following ways:\n\n*   **Dynamic Discovery and Interaction:** MCP provides a standardized way for AI agents to discover available tools and understand their capabilities at runtime through structured calls, rather than requiring hardcoded connections to each external service.\n*   **Context-Awareness:** It enables agents to access live data from enterprise systems, development environments, and other external sources, providing the necessary context to perform tasks more effectively.\n*   **Standardized Communication:** Agents establish stateful, bidirectional JSON-RPC sessions with MCP servers to facilitate tool discovery, meta-context sharing (such as permissions, user roles, and session history), and secure data exchange.\n*   **Independent Connections:** AI agents can connect to multiple MCP servers simultaneously. Each connection is independent, allowing the agent to gather information from various sources to synthesize a final output.\n*   **Abstraction:** MCP acts as an interface that handles the translation to underlying systems, meaning the AI agent does not need to understand the implementation details of the specific external tools it interacts with.",
+        "timestamp": "2026-08-31T22:10:09.140100"
+    },
+    {
+        "question": "how it is used in ai agents?",
+        "answer": "Saved Conversation Successfully",
+        "timestamp": "2026-08-31T22:10:35.635929"
+    },
+    {
+        "question": "What is the proposed methodology used in Involve?",
+        "answer": "I don't know based on the provided context. The provided text describes a \"proposed system\" and \"proposed methodology\" for connecting users with nearby professionals, but it does not mention a system named \"Involve.\"",
+        "timestamp": "2026-09-01T12:43:04.098428"
+    },
+    {
+        "question": "What is the proposed methodology used in the system described in the document?",
+        "answer": "The proposed methodology involves an intelligent system that connects users with nearby professionals through the following process:\n\n*   **Request Submission:** Users submit requests via a web or mobile application, providing descriptions through text, images, or voice input. The system collects the user's location via GPS and transmits it to the server.\n*   **AI Analysis:** An Artificial Intelligence module analyzes the description and images to identify the probable problem, estimate its severity, and classify the request into the appropriate service category.\n*   **Intelligent Assignment:** The system determines the urgency of the reported problem and intelligently assigns the most suitable verified worker based on multiple evaluation parameters.\n*   **Booking and Payment:** Pricing is confirmed before the booking to minimize disputes and improve trust. Following service completion, a blockchain-enabled payment system processes payments, ensuring transparency, preventing transaction manipulation, and providing secure digital payment verification.",
+        "timestamp": "2026-09-01T12:43:56.833780"
+    },
+    {
+        "question": "What is the conclusion of the proposed Involve methodology as described in the PDF?",
+        "answer": "Based on the provided text, the conclusion of the proposed methodology is the creation of a \"comprehensive, intelligent, scalable, and user-centric emergency service ecosystem capable of delivering faster, safer, and more efficient local services.\"",
+        "timestamp": "2026-09-01T12:45:04.420520"
+    },
+    {
+        "question": "What is the objective of Involve described in document?",
+        "answer": "I don't know based on the provided context. The provided text does not contain any information regarding an entity or project named \"Involve.\"",
+        "timestamp": "2026-09-01T12:45:44.766630"
+    },
+    {
+        "question": "what is the objective of INVOLVE an ai powered on demand local service platform",
+        "answer": "The primary objective of INVOLVE is to provide intelligent, efficient, and rapid emergency local service management. It aims to overcome the limitations of traditional service booking applications\u2014which primarily emphasize scheduled appointments\u2014by reducing response time, improving worker assignment accuracy, enhancing service reliability, optimizing resource utilization, and providing greater transparency throughout the service lifecycle. \n\nRather than simply selecting the nearest worker, the platform is designed to intelligently select the most suitable verified professional for each request based on factors such as expertise, availability, experience, proximity, workload, customer ratings, and emergency priority.",
+        "timestamp": "2026-09-01T12:46:52.862149"
+    },
+    {
+        "question": "what is the objective of INVOLVE an ai powered on demand local service platform",
+        "answer": "Saved Conversation Successfully",
+        "timestamp": "2026-09-01T12:47:14.852283"
     }
 ]
