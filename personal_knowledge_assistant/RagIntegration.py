@@ -30,6 +30,7 @@ class RagRetriever:
         return len(result["ids"]) > 0
 
     def file_loader(self, source):
+        source = str(source)
         if source.startswith("https") or source.startswith("http"):
             loader = WebBaseLoader(source)
 
